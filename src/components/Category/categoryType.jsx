@@ -23,7 +23,7 @@ export default function CategoryType() {
             {Array.isArray(categoryData?.data) && categoryData.data.length > 0 ? (
               categoryData.data.map((categoryItem) => (
         <Grid item xs={6} sm={4} md={4} lg={3}>
-                <Link key={categoryItem._id} to={`/lwg13-shop/${categoryItem._id}`} className="category-item">
+                <Link key={categoryItem._id} to={`/lwg13-shop.git/${categoryItem._id}`} className="category-item">
                   <img src={categoryItem?.image} alt="product" />
                   <p>{categoryItem?.title}</p>
                   <span className="price3">${categoryItem?.price}</span>

@@ -38,7 +38,7 @@ export default function Category() {
            <li className="category-link" onClick={() => setALL(true)}>
               <span style={{textAlign: "center"}}>All Category</span>
            </li>
-          <Link to ="/lwg13-shop/category/men's clothing" className="category-link" onClick={() => handleAll()} >
+          <Link to ="/lwg13-shop.git/category/men's clothing" className="category-link" onClick={() => handleAll()} >
           <img src={men} alt="men clothing" />
            <span >
              Men Clothing
@@ -46,36 +46,36 @@ export default function Category() {
             
       
           </Link>
-          <Link to ="/lwg13-shop/category/women's clothing" className="category-link" onClick={() => handleAll()}  >
+          <Link to ="/lwg13-shop.git/category/women's clothing" className="category-link" onClick={() => handleAll()}  >
             <img src={women} alt="women clothing" />
            <span>
               Women Clothing
            </span>
           </Link>
-           <Link to ="/lwg13-shop/category/jewelery" className="category-link" onClick={() => handleAll()} >
+           <Link to ="/lwg13-shop.git/category/jewelery" className="category-link" onClick={() => handleAll()} >
              <img src={jewelery} alt="jewelery" />
             <span >Jewelery</span>
       
           </Link>
-           <Link to="/lwg13-shop/category/electronics" className="category-link" onClick={() => handleAll()}  >
+           <Link to="/lwg13-shop.git/category/electronics" className="category-link" onClick={() => handleAll()}  >
              <img src={electronics} alt="electronics" />
            <span>
               Electronics
            </span>
           </Link>
-           <Link to="/lwg13-shop/category/skin care" className="category-link" onClick={() => handleAll()}  >
+           <Link to="/lwg13-shop.git/category/skin care" className="category-link" onClick={() => handleAll()}  >
               <img src={skin} alt="skin care" />
             <span>
                Skin Care
             </span>
            </Link>
-          <Link to="/lwg13-shop/category/food" className="category-link" onClick={() => handleAll()}  >
+          <Link to="/lwg13-shop.git/category/food" className="category-link" onClick={() => handleAll()}  >
              <img src={food} alt="food" />
            <span>
               Food
            </span>
           </Link>
-           <Link to="/lwg13-shop/category/sport" className="category-link" onClick={() => handleAll()}  >
+           <Link to="/lwg13-shop.git/category/sport" className="category-link" onClick={() => handleAll()}  >
               <img src={sport} alt="sport" />
             <span>
                Sport
@@ -92,7 +92,7 @@ export default function Category() {
               {datas && datas?.data && Array.isArray(datas?.data) ? 
                 datas?.data.map((item) => 
                 <Grid item xs={6} sm={3} md={4}>
-                 <Link to={`/lwg13-shop/${item._id}`}  className="category-item">
+                 <Link to={`/lwg13-shop.git/${item._id}`}  className="category-item">
                   <img src={item.image} alt="product" />
                   <p>{item.title}</p>
                   <span className="price3">${item.price}</span>

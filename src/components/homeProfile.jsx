@@ -34,7 +34,7 @@ export default function HomeProfile() {
       <Grid container spacing={1} >
         {lastest?.data?.map(product => 
       <Grid xs={6} sm={4} md={4} lg={3} >
-       <Link to={`/lwg13-shop/${product._id}`} className="product-item" key={product.name} >
+       <Link to={`/lwg13-shop.git/${product._id}`} className="product-item" key={product.name} >
          <img src={product.image} />
          <p>{product.title}</p>
          <span className="price" >{product.price}$</span>

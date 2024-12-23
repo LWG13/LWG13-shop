@@ -18,7 +18,7 @@ export default function createProduct() {
   const auth = useSelector((state) => state.auth);
   useEffect(() => {
     if (auth.createProductSuccess === true)
-      navigate("/lwg13-shop/admin/product");
+      navigate("/lwg13-shop.git/admin/product");
   });
   const [title, setTitle] = useState("");
   const [image, setImage] = useState(
@@ -62,7 +62,7 @@ export default function createProduct() {
    <div className="createProduct">
       <div className="grid">
         <div className="naviDetail">
-          <Link to={`/lwg13-shop/admin`}>
+          <Link to={`/lwg13-shop.git/admin`}>
             <img src={goback} alt="go back" width="90px" />
           </Link>
         </div>
