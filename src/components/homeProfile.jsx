@@ -13,8 +13,8 @@ export default function HomeProfile() {
   const auth = useSelector(state => state.auth)
    const userId = useParams()
   const userId1 = userId.profileId
-  const { data } = useQuery(["user", userId1], () => axios.get(`https://9995c89c-769d-4116-8be8-5fd12b7d8600-00-26fc6v86ibzf8.sisko.replit.dev/user/signup/${userId1}`))
-  const { data: lastest } = useQuery("lastest", () => axios.get(`https://9995c89c-769d-4116-8be8-5fd12b7d8600-00-26fc6v86ibzf8.sisko.replit.dev/product/lastest/${userId1}`))
+  const { data } = useQuery(["user", userId1], () => axios.get(`https://ecommerce-server-y5yv.onrender.com/user/signup/${userId1}`))
+  const { data: lastest } = useQuery("lastest", () => axios.get(`https://ecommerce-server-y5yv.onrender.com/product/lastest/${userId1}`))
 
   return(
     <div className="homeProfile">

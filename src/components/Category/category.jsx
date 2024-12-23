@@ -2,6 +2,9 @@
 import "./category.scss"
 import { Grid } from "@mui/material"
 import { useQuery } from "react-query"
+import food from "./food.png"
+import skin from "./skin.png"
+import sport from "./sport.png"
 import star from "../star.png"
 import { Link, Outlet } from "react-router-dom"
 import men from "./men.png"
@@ -14,7 +17,7 @@ import axios from "axios"
 
 export default function Category() {
   const [page, setPage] = useState(0)
-  const { data : datas } = useQuery(["products",page],() => axios.get(`https://9995c89c-769d-4116-8be8-5fd12b7d8600-00-26fc6v86ibzf8.sisko.replit.dev/product?limit=${page}`))
+  const { data : datas } = useQuery(["products",page],() => axios.get(`https://ecommerce-server-y5yv.onrender.com/product?limit=${page}`))
   const [ display, setDisplay ]  = useState(false)
   const [all, setAll] = useState(true)
  
@@ -60,7 +63,24 @@ export default function Category() {
               Electronics
            </span>
           </Link>
-          
+           <Link to="/lwg13-shop/category/skin care" className="category-link" onClick={() => handleAll()}  >
+              <img src={skin} alt="skin care" />
+            <span>
+               Skin Care
+            </span>
+           </Link>
+          <Link to="/lwg13-shop/category/food" className="category-link" onClick={() => handleAll()}  >
+             <img src={food} alt="food" />
+           <span>
+              Food
+           </span>
+          </Link>
+           <Link to="/lwg13-shop/category/sport" className="category-link" onClick={() => handleAll()}  >
+              <img src={sport} alt="sport" />
+            <span>
+               Sport
+            </span>
+           </Link>
          </div>
         </Grid>
         <Grid item xs={8} >

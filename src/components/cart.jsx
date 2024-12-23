@@ -12,7 +12,7 @@ import { removeFromCart, decreaseCart, addToCart, clearCart, getTotals} from "./
 import { useDispatch } from "react-redux"
 import { useEffect } from "react"
 export default function Cart() {
-  const { data : datas } = useQuery("products", () => axios.get("https://9995c89c-769d-4116-8be8-5fd12b7d8600-00-26fc6v86ibzf8.sisko.replit.dev/product"))
+  const { data : datas } = useQuery("products", () => axios.get("https://ecommerce-server-y5yv.onrender.com/product"))
   const cart = useSelector((state) => state.cart)
   const auth = useSelector((state) => state.auth)
   useEffect(() => {
@@ -114,7 +114,7 @@ export default function Cart() {
                 </Grid>
               ): <p>loading..</p>}
               </Grid>
-              <a href="#" className="linkMore2"><div className="more2"><button className="moreButton2">Look More</button></div></a>
+                   <Link to="/lwg13-shop/category" className="linkMore"><div className="more"><button className="moreButton">Look More</button></div></Link>
             </div>
      
       <Footer />

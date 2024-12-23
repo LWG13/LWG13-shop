@@ -1,5 +1,7 @@
 import "./admin.scss"
 import { Grid } from "@mui/material"
+import productList from "../../productList.png"
+import overview from "../../overview.png"
 import { useState, useRef, useEffect } from "react"
 import cato from "./cato.png"
 import goback from "./goback.png"
@@ -59,12 +61,12 @@ function Setting({menu, setMenu}) {
          </div>
          <div className={`dropdownmenu10 ${ menu ? "active10" : "deactive10" }`}>
              <Link to="/lwg13-shop/admin" className="dropdownitem10" >
-               <img src="" alt="setting" />
+               <img src={overview} alt="overview" />
                <p className="link10" >Overview</p>
              </Link>
            <Link to="/lwg13-shop/admin/product"  className="dropdownitem10" >
-              <img src="" alt="help" />
-               <p  className="link10" >Product List</p>
+              <img src={productList} alt="product list" />
+               <p  className="link10" >Your Product</p>
              </Link>
          </div>
        </div>

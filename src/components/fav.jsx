@@ -10,7 +10,7 @@ import Footer from "./footer.jsx"
 import {Grid} from "@mui/material"
 import {removeFromFav} from "./ReduxToolkit/favSlice"
 export default function Favourite() {
-  const { data : datas } = useQuery("products", () => axios.get("https://9995c89c-769d-4116-8be8-5fd12b7d8600-00-26fc6v86ibzf8.sisko.replit.dev/product"))
+  const { data : datas } = useQuery("products", () => axios.get("https://ecommerce-server-y5yv.onrender.com/product"))
   const fav = useSelector(state => state.fav)
   const dispatch = useDispatch()
   return(
@@ -70,7 +70,7 @@ export default function Favourite() {
                 </Grid>
               ): <p>loading..</p>}
               </Grid>
-              <a href="#" className="linkMore2"><div className="more2"><button className="moreButton2">Look More</button></div></a>
+                               <Link to="/lwg13-shop/category" className="linkMore"><div className="more"><button className="moreButton">Look More</button></div></Link>
              </div>
               <Footer />
             </div>

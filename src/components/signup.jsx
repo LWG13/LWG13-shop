@@ -67,10 +67,7 @@ console.log(user)
        <button className="btn" disabled={!isDirty || isSubmitting }>Sign Up</button>
       <div className="register-link">
        <p>Already Have Account?<Link to="/lwg13-shop/login">.  Log In</Link></p>
-        <p className="or">OR</p>
-        <button className="google">Continue with Google</button>
-        <p></p>
-        <button className="fb">Continue with Facebook</button>
+        <br/>
       </div>
      </Form>
     </div>

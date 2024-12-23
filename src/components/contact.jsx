@@ -17,7 +17,7 @@ export default function Contact() {
     message: "",
   })
   const handleSubmit = () => {
-    axios.post("https://9995c89c-769d-4116-8be8-5fd12b7d8600-00-26fc6v86ibzf8.sisko.replit.dev/contact", {
+    axios.post("https://ecommerce-server-y5yv.onrender.com/contact", {
       name: user.name,
       email: user.email,
       phoneNumber: user.phoneNumber,

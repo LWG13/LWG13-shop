@@ -18,7 +18,7 @@ import { useDispatch } from "react-redux"
 import { addToFav } from "./ReduxToolkit/favSlice"
 import { addToCart } from "./ReduxToolkit/cartSlice"
 export default function Detail() {
-  const { data : datas } = useQuery("products", () => axios.get("https://9995c89c-769d-4116-8be8-5fd12b7d8600-00-26fc6v86ibzf8.sisko.replit.dev/product"))
+  const { data : datas } = useQuery("products", () => axios.get("https://ecommerce-server-y5yv.onrender.com/product"))
   const [hearts, setHearts] = useState(false)
   const dispatch = useDispatch()
   const handleAddToCart = (product) => {
@@ -28,7 +28,7 @@ export default function Detail() {
   const { productId }= useParams()
   const { data } = useQuery({ 
     queryKey: ["products", productId],
-    queryFn: () => axios.get(`https://9995c89c-769d-4116-8be8-5fd12b7d8600-00-26fc6v86ibzf8.sisko.replit.dev/product/${productId}`)
+    queryFn: () => axios.get(`https://ecommerce-server-y5yv.onrender.com/product/${productId}`)
   })
   console.log(productId)
   console.log(data)
@@ -113,7 +113,7 @@ export default function Detail() {
                 </Grid>
               ): <p>loading..</p>}
               </Grid>
-              <a href="#" className="linkMore1"><div className="more1"><button className="moreButton1">Look More</button></div></a>
+               <Link to="/lwg13-shop/category" className="linkMore"><div className="more"><button className="moreButton">Look More</button></div></Link>
             </div>
         
           <Footer />

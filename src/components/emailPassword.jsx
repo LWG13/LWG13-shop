@@ -38,7 +38,7 @@ return(
         
        </div>
         <span className="error">{errors?.email?.message}</span>
-      <p style={{color: "red"}}>{auth.error}</p>
+        { auth.registerStatus === "reject" ? (<p style={{color: "red"}}>{auth.error}</p>) : null}
        <button className="btn">Confirm</button>
       </Form>
                  </div>

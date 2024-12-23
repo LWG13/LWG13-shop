@@ -14,7 +14,7 @@ export default function ProfileProduct() {
   const [page, setPage] = useState(0)
    const userId = useParams()
   const userId1 = userId.profileId
-  const { data } = useQuery("yourProduct", () => axios.get(`https://9995c89c-769d-4116-8be8-5fd12b7d8600-00-26fc6v86ibzf8.sisko.replit.dev/product/userProduct/${userId1}?limit=${page}`))
+  const { data } = useQuery("yourProduct", () => axios.get(`https://ecommerce-server-y5yv.onrender.com/product/userProduct/${userId1}?limit=${page}`))
   const auth = useSelector(state => state.auth)
   console.log(data)
   return(
@@ -36,12 +36,13 @@ export default function ProfileProduct() {
         </Link>
       </Grid>
     )}
+        <button className={page === 0 ? "pagButton none" : "pagButton"} onClick={() => setPage(page - 1)} >{page === 0 ? 0 : page - 1}</button>
+        <button className="pagButton now">{page}</button>
+         <button onClick={() => setPage(page + 1)} className={data?.data.length !== 20 ? "pagButton none" : "pagButton"}>{page + 1}</button>
+        <button onClick={() => setPage(page + 2)} className={data?.data.length !== 20 ? "pagButton none" : "pagButton"}>{page + 2}</button>
       </Grid>
       )}
-      <button className={page === 0 ? "pagButton none" : "pagButton"} onClick={() => setPage(page - 1)} >{page === 0 ? 0 : page - 1}</button>
-              <button className="pagButton now">{page}</button>
-               <button onClick={() => setPage(page + 1)} className={data?.data.length !== 20 ? "pagButton none" : "pagButton"}>{page + 1}</button>
-              <button onClick={() => setPage(page + 2)} className={data?.data.length !== 20 ? "pagButton none" : "pagButton"}>{page + 2}</button>
+     
       </div>
 
 )

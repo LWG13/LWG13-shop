@@ -68,6 +68,7 @@ export default function EditProfile() {
       <div className="profileBox1">
       <div className="profileInfo1">
       <h1>Edit Account</h1>
+        <br/>
       <Grid container >
        <Grid item xs={12} sm={4} md={4} lg={4} >
        <div className="profileImg">

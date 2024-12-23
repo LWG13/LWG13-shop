@@ -10,7 +10,7 @@ export default function
   AdminProduct() {
     const dispatch = useDispatch()
     const auth = useSelector(state => state.auth)
-    const { data } = useQuery("yourProduct", () => axios.get(`https://9995c89c-769d-4116-8be8-5fd12b7d8600-00-26fc6v86ibzf8.sisko.replit.dev/product/userProduct/${auth._id}`))
+    const { data } = useQuery("yourProduct", () => axios.get(`https://ecommerce-server-y5yv.onrender.com/product/userProduct/${auth._id}`))
     const navigate = useNavigate()
     const createButton = () => {
       navigate("/lwg13-shop/create-product")

@@ -16,7 +16,7 @@ export default function Profile() {
   const userId1 = userId.profileId
   const { data } = useQuery({ 
     queryKey: ["user", userId.profileId1],
-    queryFn: () => axios.get(`https://9995c89c-769d-4116-8be8-5fd12b7d8600-00-26fc6v86ibzf8.sisko.replit.dev/user/signup/${userId1}`)
+    queryFn: () => axios.get(`https://ecommerce-server-y5yv.onrender.com/user/signup/${userId1}`)
   })
   const [page, setPage] = useState(1)
   const dispatch = useDispatch()

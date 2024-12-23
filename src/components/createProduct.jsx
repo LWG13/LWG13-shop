@@ -73,6 +73,8 @@ export default function createProduct() {
           <div className="productBox">
             <div className="productInfo">
               <h1>Create your Product</h1>
+              <br/>
+              <hr style={{backGroundColor: "black"}}/>
               <Grid container>
                 <Grid item xs={12} sm={5} md={5} lg={5}>
                   <div className="productImg">
@@ -86,6 +88,7 @@ export default function createProduct() {
                   </div>
                 </Grid>
                 <Grid item xs={12} sm={7} md={7} lg={7}>
+                
                   <Form
                     onSubmit={handleSubmit}
                     control={control}
@@ -168,7 +171,7 @@ export default function createProduct() {
                     />
                     <p className="error">{errors.price?.message}</p>
 
-                    <button className="btn-submit" disabled={auth.createStatus === "PENDING"}>{auth.createStatus === "PENDING" ? <span>creating...</span> : <span>ceate</span>} </button>
+                    <button className="btn-submit" disabled={auth.createStatus === "PENDING"}>{auth.createStatus === "PENDING" ? <span>Creating...</span> : <span>Create</span>} </button>
                   </Form>
                 </Grid>
               </Grid>

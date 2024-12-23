@@ -34,7 +34,7 @@ const initialState= {
 
 export const registerUser = createAsyncThunk("auth/signup", async (values, {rejectWithValue}) => {
    try{
-      const token = await axios.post("https://9995c89c-769d-4116-8be8-5fd12b7d8600-00-26fc6v86ibzf8.sisko.replit.dev/user/signup", {
+      const token = await axios.post("https://ecommerce-server-y5yv.onrender.com/user/signup", {
        username: values.username,
        email: values.email,
        password: values.password,
@@ -52,7 +52,7 @@ export const registerUser = createAsyncThunk("auth/signup", async (values, {reje
 
 export const emailAuth = createAsyncThunk("auth/email", async (values, {rejectWithValue}) => {
    try{
-      const data = await axios.post("https://9995c89c-769d-4116-8be8-5fd12b7d8600-00-26fc6v86ibzf8.sisko.replit.dev/user/verify", {
+      const data = await axios.post("https://ecommerce-server-y5yv.onrender.com/user/verify", {
        email: values.email,
 
      })
@@ -64,7 +64,7 @@ export const emailAuth = createAsyncThunk("auth/email", async (values, {rejectWi
 })
 export const createYourProduct = createAsyncThunk("product/create", async (values, {rejectWithValue}) => {
    try{
-      const data = await axios.post("https://9995c89c-769d-4116-8be8-5fd12b7d8600-00-26fc6v86ibzf8.sisko.replit.dev/product/create", {
+      const data = await axios.post("https://ecommerce-server-y5yv.onrender.com/product/create", {
        title: values.title,
        image: values.image,
        description: values.description,
@@ -83,7 +83,7 @@ export const createYourProduct = createAsyncThunk("product/create", async (value
 })
 export const otpAuth = createAsyncThunk("auth/otp", async (values, {rejectWithValue}) => {
    try{
-      const data = await axios.post("https://9995c89c-769d-4116-8be8-5fd12b7d8600-00-26fc6v86ibzf8.sisko.replit.dev/user/verify/otp", {
+      const data = await axios.post("https://ecommerce-server-y5yv.onrender.com/user/verify/otp", {
        otp: values
 
      })
@@ -96,7 +96,7 @@ export const otpAuth = createAsyncThunk("auth/otp", async (values, {rejectWithVa
 export const deleteProduct = createAsyncThunk("product/delete", async (values, {rejectWithValue}) => {
    try{
       console.log("id", values)
-      const data = await axios.delete(`https://9995c89c-769d-4116-8be8-5fd12b7d8600-00-26fc6v86ibzf8.sisko.replit.dev/product/delete/${values}`, {
+      const data = await axios.delete(`https://ecommerce-server-y5yv.onrender.com/product/delete/${values}`, {
        _id: values
 
      })
@@ -108,7 +108,7 @@ export const deleteProduct = createAsyncThunk("product/delete", async (values, {
 })
 export const editProduct = createAsyncThunk("product/edit", async (values, {rejectWithValue}) => {
    try{
-      const data = await axios.put(`https://9995c89c-769d-4116-8be8-5fd12b7d8600-00-26fc6v86ibzf8.sisko.replit.dev/product/create/${values._id}`, {
+      const data = await axios.put(`https://ecommerce-server-y5yv.onrender.com/product/create/${values._id}`, {
        _id: values._id,
        image: values.image,
        title: values.title,
@@ -125,7 +125,7 @@ export const editProduct = createAsyncThunk("product/edit", async (values, {reje
 })
 export const resetPassword = createAsyncThunk("auth/reset", async (values, {rejectWithValue}) => {
    try{
-      const data = await axios.post("https://9995c89c-769d-4116-8be8-5fd12b7d8600-00-26fc6v86ibzf8.sisko.replit.dev/user/verify/password", {
+      const data = await axios.post("https://ecommerce-server-y5yv.onrender.com/user/verify/password", {
        password: values.password,
        email: values.email
      })
@@ -137,7 +137,7 @@ export const resetPassword = createAsyncThunk("auth/reset", async (values, {reje
 })
 export const loginUser = createAsyncThunk("auth/login", async (values, {rejectWithValue}) => {
    try{
-      const token = await axios.post("https://9995c89c-769d-4116-8be8-5fd12b7d8600-00-26fc6v86ibzf8.sisko.replit.dev/user/login", {
+      const token = await axios.post("https://ecommerce-server-y5yv.onrender.com/user/login", {
        email: values.email,
        password: values.password,
      })
@@ -150,7 +150,7 @@ export const loginUser = createAsyncThunk("auth/login", async (values, {rejectWi
 })
 export const editProfile = createAsyncThunk("auth/avatar", async (values, {rejectWithValue}) => {
    try{
-      const token = await axios.put(`https://9995c89c-769d-4116-8be8-5fd12b7d8600-00-26fc6v86ibzf8.sisko.replit.dev/user/signup/${values._id}`, {
+      const token = await axios.put(`https://ecommerce-server-y5yv.onrender.com/user/signup/${values._id}`, {
        username: values.username,
        phoneNumber: values.phoneNumber,
        image: values.image,
@@ -213,7 +213,7 @@ const authSlice = createSlice({
   extraReducers: (builder) => {
     
     builder.addCase(registerUser.pending, (state, action) => {
-      return {...state, loginStatus: "pending"}
+      return {...state, registerStatus: "pending"}
     })
     builder.addCase(registerUser.fulfilled, (state,action) => {
       if(action.payload) {
@@ -255,7 +255,8 @@ const authSlice = createSlice({
         password: user.password,
         image: user.image,
           desc: user.desc,
-        loginStatus: "success"
+        loginStatus: "success",
+        registerStatus: ""
       }
       }else {
         return state
@@ -293,18 +294,38 @@ const authSlice = createSlice({
       return {
         ...state,
         firstAuth: true,
-        emailReset: action.payload
+        emailReset: action.payload,
+        registerStatus: ""
       }
       
+    })
+    
+    builder.addCase(emailAuth.pending, (state,action) => {
+
+      return {
+        ...state,
+        registerStatus: "pending"
+      }
+
     })
     builder.addCase(otpAuth.rejected, (state,action) => {
       return {...state,  error: action.payload}
     }) 
+    builder.addCase(otpAuth.pending, (state,action) => {
+
+      return {
+        ...state,
+       registerStatus: "pending"
+      }
+      
+    })
     builder.addCase(otpAuth.fulfilled, (state,action) => {
 
       return {
         ...state,
-        secondAuth: true
+        secondAuth: true,
+        registerStatus: ""
+        
       }
       
     })
@@ -317,7 +338,16 @@ const authSlice = createSlice({
         ...state,
         firstAuth: false,
         secondAuth: false,
-        successReset: true
+        successReset: true,
+        registerStatus: ""
+      }
+    })
+    builder.addCase(resetPassword.rejected, (state,action) => {
+
+      return {
+        ...state,
+        error: "invalid password",
+        registerStatus: "reject"
       }
     })
     builder.addCase(createYourProduct.pending, (state,action) => {

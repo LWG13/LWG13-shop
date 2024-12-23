@@ -11,13 +11,13 @@ export default function CategoryType() {
   const { category } = useParams()
   const { data: categoryData, isLoading, isError, error} = useQuery({ 
     queryKey: ["product", category],
-    queryFn: () => axios.get(`https://9995c89c-769d-4116-8be8-5fd12b7d8600-00-26fc6v86ibzf8.sisko.replit.dev/product/category/${category}?limit=${page}`)
+    queryFn: () => axios.get(`https://ecommerce-server-y5yv.onrender.com/product/category/${category}?limit=${page}`)
   })
   if (isLoading) return <div>Loading...</div>;
   if (isError) return <div>Error: {error.message}</div>;
   return(
       <div className="category-product">
-        
+        <br/>
         <Grid container >
           
             {Array.isArray(categoryData?.data) && categoryData.data.length > 0 ? (

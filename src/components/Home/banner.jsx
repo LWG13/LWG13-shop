@@ -1,6 +1,7 @@
 
 import "./banner.scss"
 import Slider from "react-slick" 
+import { Link } from "react-router-dom"
 import banner1 from "./banner1.jpg"
 import banner2 from "./banner2.png"
 import banner3 from "./banner3.jpg"
@@ -55,7 +56,7 @@ export default function Banner() {
              </h2>
              <p>Save up for your bussiness</p>
              <br/>
-             <button>Go to Category</button>
+             <button><Link style={{textDecoration: "none", color: "white"}} to="/lwg13-shop/category">Go to Category</Link></button>
            </div>
           </div>
        </Slider>

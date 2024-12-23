@@ -24,7 +24,7 @@ export default function EditProduct() {
     if (auth.editProductSuccess === true)
       navigate("/lwg13-shop/admin/product");
   });
-  const { data } = useQuery(["product", productId.productId], () => axios.get(`https://9995c89c-769d-4116-8be8-5fd12b7d8600-00-26fc6v86ibzf8.sisko.replit.dev/product/${productId.productId}`))
+  const { data } = useQuery(["product", productId.productId], () => axios.get(`https://ecommerce-server-y5yv.onrender.com/product/${productId.productId}`))
   const [title, setTitle] = useState(data?.data.title);
   const [image, setImage] = useState(data?.data.image);
   const [description, setDescription] = useState(data?.data.description);
@@ -43,6 +43,7 @@ export default function EditProduct() {
     title: title,
     image: image,
     description: description,
+    price: price,
     category: category,
   };
   console.log(product)

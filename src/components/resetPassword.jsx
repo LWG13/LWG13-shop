@@ -38,7 +38,7 @@ export default function ResetPassword() {
         
        </div>
         <span className="error">{errors?.password?.message}</span>
-      <p style={{color: "red"}}>{auth.error}</p>
+        {auth.registerStatus === "reject" ? (<p style={{color: "red"}}>{auth.error}</p>) : null}
        <button className="btn">Confirm</button>
       </Form>
                  </div>

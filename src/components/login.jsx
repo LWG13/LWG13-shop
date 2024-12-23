@@ -43,10 +43,7 @@ export default function Login() {
        <button className="btn">Login</button>
       <div className="register-link">
        <p>Don't Have An Account?<Link to="/lwg13-shop/signup">.  Register</Link></p>
-        <p className="or">OR</p>
-        <button className="google">Continue with Google</button>
-        <p>.</p>
-        <button className="fb">Continue with Facebook</button>
+        <br/>
       </div>
      </Form>
     </div>

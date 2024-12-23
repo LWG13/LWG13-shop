@@ -6,7 +6,7 @@ import axios from "axios"
 import {Grid} from "@mui/material"
 import { Link } from "react-router-dom"
 export default function Product() {
-  const { data } = useQuery("products", () => axios.get("https://9995c89c-769d-4116-8be8-5fd12b7d8600-00-26fc6v86ibzf8.sisko.replit.dev/product"))
+  const { data } = useQuery("products", () => axios.get("https://ecommerce-server-y5yv.onrender.com/product"))
   return(
     <div className="product-box2">
     <h2>Featured Products</h2>
@@ -23,7 +23,7 @@ export default function Product() {
         </Grid>
       ): <p>loading..</p>}
       </Grid>
-      <a href="#" className="linkMore"><div className="more"><button className="moreButton">Look More</button></div></a>
+      <Link to="/lwg13-shop/category" className="linkMore"><div className="more"><button className="moreButton">Look More</button></div></Link>
     </div>
   )
 }

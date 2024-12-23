@@ -26,7 +26,7 @@ export default function RandomCategory() {
    var settings1 ={
     infinite: true,
     speed: 500,
-    slidesToShow: 8,
+    slidesToShow: 6,
     slidesToScroll: 1,
     fade: false, 
     arrows: true,
@@ -48,20 +48,12 @@ export default function RandomCategory() {
             <p>Food</p>
          </div>
          <div className="catItem" style={{backgroundColor: "#A868D9"}}>
-            <img src={pet} alt="pet" />
-            <p>Pet Supplies</p>
-         </div>
-         <div className="catItem" style={{backgroundColor: "#A868D9"}}>
             <img src={jewery} alt="cloth" />
-            <p>Jewery</p>
+            <p>Jewelery</p>
          </div>
          <div className="catItem"style={{backgroundColor: "blue"}}>
-            <img src={computer} alt="computer" />
-            <p>Computer and Phone</p>
-         </div>
-         <div className="catItem" style={{backgroundColor: "#A868D9"}}>
-            <img src={garden} alt="garden" />
-            <p>Garden Tools</p>
+            <img src={computer} alt="electronics" />
+            <p>Electronics</p>
          </div>
          <div className="catItem" style={{backgroundColor: "blue"}}>
             <img src={skincare} alt="skin care" />
@@ -69,12 +61,9 @@ export default function RandomCategory() {
          </div>
          <div className="catItem" style={{backgroundColor: "leaf"}}>
             <img src={sport} alt="sport" />
-            <p>Sport tool</p>
+            <p>Sport </p>
          </div>
-         <div className="catItem" style={{backgroundColor: "leaf"}}>
-            <img src={housework} alt="housework" />
-            <p>Housework tool</p>
-         </div>
+         
          
        </Slider>
         
@@ -95,10 +84,7 @@ export default function RandomCategory() {
             <img src={food} alt="food" />
             <p>Food</p>
          </div>
-         <div className="catItem1" style={{backgroundColor: "#A868D9"}}>
-            <img src={pet} alt="pet" />
-            <p>Pet Supplies</p>
-         </div>
+         
          <div className="catItem1" style={{backgroundColor: "#A868D9"}}>
             <img src={jewery} alt="cloth" />
             <p>Jewery</p>
@@ -107,10 +93,7 @@ export default function RandomCategory() {
             <img src={computer} alt="computer" />
             <p>Computer and Phone</p>
          </div>
-         <div className="catItem1" style={{backgroundColor: "#A868D9"}}>
-            <img src={garden} alt="garden" />
-            <p>Garden Tools</p>
-         </div>
+         
          <div className="catItem1" style={{backgroundColor: "blue"}}>
             <img src={skincare} alt="skin care" />
             <p>Skin Care</p>
@@ -118,11 +101,7 @@ export default function RandomCategory() {
       
          <div className="catItem1" style={{backgroundColor: "leaf"}}>
             <img src={sport} alt="sport" />
-            <p>Sport tool</p>
-         </div>
-         <div className="catItem1" style={{backgroundColor: "leaf"}}>
-            <img src={housework} alt="housework" />
-            <p>Housework tool</p>
+            <p>Sport</p>
          </div>
          
        </Slider>

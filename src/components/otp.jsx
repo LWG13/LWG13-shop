@@ -40,7 +40,7 @@ return(
       inputStyle={{width: "60px", height:"60px", fontSize: "30px", border: "2px solid black"}}
     />
       </div>
-        <p>{auth.error}</p>
+        {auth.registerStatus === "reject" ? (<p>{auth.error}</p>) : null}
         <p>Check Gmail to have OTP code</p>
         <br/><br/>
         <button className="btn">Confirm</button>
