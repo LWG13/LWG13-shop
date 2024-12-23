@@ -1,0 +1,76 @@
+
+@font-face {
+  font-family: Montserrat;
+  src: url("./montserrat.ttf");
+  font-weight: 500;
+}
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css");
+
+.catSlide{
+  width: 100%;
+  height: 80px;
+
+}
+.catSliderMain .catItem {
+  height: 160px;
+  background-color: #A868D9;
+  text-align: center;
+  align-items: center;
+  z-index: 10;
+  display: flex;
+  border: 0.5px solid #D2A2F8;
+
+}
+.catSliderMain .catItem p {
+  font-weight: 300;
+  color: white;
+}
+.catSliderMain .catItem img {
+  width: 100%;
+  height: 100px;
+}
+.hd{
+  font-size: 25px;
+  font-weight: 500;
+}
+.catSlide1{
+  width: 100%;
+  height: 120px;
+
+}
+.catSliderMain1 .catItem1 {
+  height: 165px;
+  background-color: #A868D9;
+  text-align: center;
+  align-items: center;
+  z-index: 10;
+  display: flex;
+  border: 0.5px solid #D2A2F8;
+
+}
+.catSliderMain1 .catItem1 p {
+  font-weight: 300;
+  color: white;
+}
+.catSliderMain1 .catItem1 img {
+  width: 93px;
+  height: 93px;
+  margin-left: 10px;
+}
+.hd1{
+  font-size: 25px;
+  font-weight: 500;
+}
+@media only screen and (max-width: 464px) {
+  .catSlide1 {
+    display: none;
+  }
+}
+@media only screen and (min-width: 464px) {
+  .catSlide {
+    display:none;
+  }
+
+}

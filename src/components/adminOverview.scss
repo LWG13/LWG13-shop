@@ -1,0 +1,51 @@
+.overview {
+  padding-top:30px;
+  width: 100%;
+}
+.overview .overview-stat {
+  background: black;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+.overview .overview-stat .stat {
+  display: flex;
+  flex-wrap: wrap;
+}
+.overview .overview-stat .stat .stat-box {
+  display: flex;
+  background: #BF77F6;
+  width: 100px;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  flex-grow: 1;
+}
+.overview .overview-stat .stat .stat-box .svgg {
+  width: 50px;
+  height: 50px;
+}
+.overview .overview-stat .stat .stat-box .stat-box-detail {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+}
+.overview .overview-stat .stat .stat-box .stat-box-detail .stat-name {
+  font-size: 20px;
+  font-weight: 500;
+}
+.overview .chart {
+  background-color: white;
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.overview .transaction {
+  background: black;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 20px;
+  padding-bottom: 90px;
+}

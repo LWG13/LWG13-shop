@@ -1,0 +1,152 @@
+@font-face {
+  font-family: Montserrat;
+  src: url("./montserrat.ttf");
+  font-weight: 500;
+}
+body{
+  font-family: "Montserrat", sans-serif !important;
+}
+.admin {
+  width: 100%;
+  padding: 5px;
+}
+.sidebar{
+  background: white;
+  padding: 10px;
+  margin-top: 20px;
+  width: 30%;
+  height: 95vh;
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+}
+.sidebar .sidebar-list {
+  width: 90%;
+  border-radius: 10px;
+  height: 50px;
+  padding: 10px;
+  background: white;
+}
+.sidebar .sidebar-list:hover {
+  background-color: #F2F3F4;
+}
+.sidebar .sidebar-list a {
+  color: black;
+  text-decoration: none;
+  font-size: 21px;
+}
+.menu-trigger10 p{
+  overflow: hidden;
+  cursor: pointer;
+  padding: 10px;
+  color: black;
+}
+.menu-trigger10 img {
+  padding-top: 10px;
+}
+.icon10 {
+  padding-right: 10px;
+}
+.icon10 img{
+  width: 30px;
+}
+.dropdownmenu10{
+  position: absolute;
+  top: 100px;
+  right: 20px;
+  background-color: #BF77F6;
+  width: 200px;
+  padding: 10px 20px;
+  border-radius: 15px;
+  z-index: 10;
+}
+.dropdownmenu10::before{
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: 20px;
+  height: 20px;
+  width: 20px;
+  transform: rotate(45deg);
+}
+.dropdownmenu10.active10 {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+  transform: translateY(0);
+}
+.dropdownmenu10.deactive10{
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+  transform: translateY(-20px);
+}
+h3{
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  padding: 20px 0;
+  font-weight: 500;
+  line-height: 1.2rem;
+}
+h3 span{
+  font-size: 14px;
+  color: grey;
+  font-weight:400px;
+}
+.dropdownmenu10 ul li{
+  padding: 10px 0;
+  border-top: 1px solid rgba(0,0,0,0.5);
+}
+.dropdownmenu10 ul li:hover{
+  cursor: pointer;
+  color: purple;
+}
+.dropdownmenu10 ul li:hover img{
+  opacity: 1;
+  cursor: pointer;
+}
+.menu-item10 {
+  flex-direction: column;
+  padding-top: 25px;
+}
+.dropdownitem10{
+  display: flex;
+  margin: 10px auto;
+  border-radius: 10px;
+  padding: 10px;
+  font-weight: 400;
+  text-decoration: none;
+  z-index: 1000000000;
+}
+.dropdownitem10:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  background: #D2A2F8;
+}
+
+.dropdownitem10 img {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  obacity: 0.5;
+  transition: 0.5s;
+}
+.dropdownitem10 .link10{
+  font-size: 18px;
+  margin-left: 10px;
+  transition: 0.5s;
+  text-decoration: none;
+  color: white;
+  
+}
+@media only screen and (max-width: 464px) {
+  .sidebar{
+    display: none;
+  }
+}
+@media only screen and (min-width: 464px) {
+  .menu-trigger10{
+    display: none;
+  }
+}

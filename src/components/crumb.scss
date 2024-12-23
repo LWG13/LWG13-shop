@@ -1,0 +1,23 @@
+
+.breadcrumb {
+  margin: 10px;
+  color: #BF77F6;
+
+}
+.breadcrumb > *{
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.breadcrumb .crumb:after {
+  content: ">";
+  margin-left: 15px;
+}
+.breadcrumb .crumb:last-child:after {
+  display: none;
+}
+.breadcrumb .crumb a {
+  color: #BF77F6;
+  font-size: 20px;
+  text-decoration: none;
+}

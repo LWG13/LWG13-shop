@@ -1,0 +1,137 @@
+
+
+@font-face {
+  font-family: Montserrat;
+  src: url("./montserratBold.ttf");
+  font-weight: 500;
+}
+.product-box {
+  width: 100%;
+  height: auto;
+  padding: 0px;
+
+}
+.product-box .product-item {
+  padding: 15px;
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  margin: 10px;
+  height: auto;
+  border-radius: 5px;
+  font-family: "Montserrat", sans-serif
+}
+.product-box .product-item .price{
+  font-size: 16px;
+  padding: none;
+  color: #A868D9;
+}
+.product-box .product-item img {
+  width: 100%;
+  height: 150px;
+  border-radius: 10px;
+}
+.product-box .product-item p {
+  font-size: 15px;
+  padding: 0px;
+  overflow: hidden;
+  width: 100%; 
+  white-space: nowrap; 
+  text-overflow: ellipsis; 
+}
+.product-box .product-item span {
+  font-size: 12px;
+}
+.product-box .product-item .rate span{
+   font-size: 22px;
+}
+.product-box .product-item .rate img {
+  height: 25px;
+  width: 25px;
+  margin-top: 10px;
+}
+.product-box .product-item button {
+  width: 80%;
+  height: 50px;
+  border-radius: 15px;
+  border: none;
+  ouline: none;
+  background-color: #A868D9;
+  color: white;
+}
+
+.linkMore .more {
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  padding-bottom: 70px;
+}
+.linkMore .more .moreButton {
+  width: 200px;
+  height: 70px;
+  padding: 5px;
+  background-color: #BF77F6;
+  color: white;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+.product-category{
+  background: #BF77F6;
+  padding: 4px;
+  color: white;
+}
+.linkMore .more .moreButton {
+  text-decoration: none;
+  font-size: 20px;
+  color: #BF77F6;
+  background: white;
+  font-family: "Monserrat", sans-serif;
+  border: 4px solid #BF77F6;
+  transition: 0.4s;
+}
+.linkMore .more .moreButton:hover {
+  color:white;
+  background: #BF77F6;
+  transition: 0.4s;
+}
+@media only screen and (max-width: 464px) {
+  .product-box .product-item p {
+    font-size: 13px;
+  }
+  .product-box .product-item .rate img {
+  height: 20px;
+  width: 20px;
+  margin-top: 10px;
+  }
+  .product-box .product-item .rate span{
+   font-size: 14px;
+  }
+  .product-box .product-item {
+  padding: 10px;
+  background-color: #FFF;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  margin: 10px;
+  height: auto;
+  
+  border-radius: 5px;
+  font-family: "Montserrat", sans-serif
+}
+  .product-box .product-item img {
+  width: 100%;
+  height: 140px;
+  border-radius: 10px;
+  }
+  .product-box .product-item .price{
+    font-size: 16px;
+    padding: none;
+  }
+}

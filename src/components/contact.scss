@@ -1,0 +1,81 @@
+.contact {
+  margin-top: 120px;
+
+  
+}
+.contact .contactInfo {
+  text-align: center;
+
+  background: #D2A2F8;
+  padding: 15px;
+  padding-bottom: 50px;
+}
+.contact .contactInfo .contactBox {
+  text-align: center;
+  margin-top: 25px;
+  color: white;
+  padding: 10px;
+} 
+.btn{
+  width: 100%;
+  height: 45px;
+  background: #BF77F6;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, -1);
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+  font-weight: 700;
+  margin-top: 30px;
+}
+
+.contact .contactInfo .contactBox img {
+  width: 100px;
+  height: 100px;
+}
+.contact .contactInfo .contactBox ul {
+  text-decoration: none;
+}
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  padding-top: 70px;
+  padding-bottom: 50px;
+}
+.contactForm form{
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.contactForm .input-box1{
+  position: relative;
+  width: 100%;
+  height: 50px;
+
+  display: flex;
+  flex-direction: column;
+}
+.contactForm textarea{
+  
+  height: 150px;
+  background: transparent;
+  outline: none;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.input-box1 input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  outline: none;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.input-box1 input::placeholder{
+  color: black;
+  padding-left: 10px;
+}

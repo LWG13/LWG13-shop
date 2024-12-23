@@ -1,0 +1,142 @@
+
+@font-face {
+  font-family: Montserrat;
+  src: url("./montserrat.ttf");
+  font-weight: 500;
+}
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css");
+.banner{
+  margin-top: 120px;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif !important;
+}
+.sliderMain{
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+}
+.sliderMain .slick-dots{
+  position: absolute;
+  bottom: 30px !important;
+}
+.sliderMain .slick-dots button:before{
+  width: 10px !important;
+  height: 10px !important;
+  font-size: 16px;
+}
+.slick-active button::before{
+  color: #A868D9;
+}
+.slick-arrow{ 
+  position: absolute;
+  top: 47%;
+  width: 35px !important;
+  height: 35px !important;
+  border-radius: 50% !important;
+  background-color: #D2A2F8 !important;
+  color: black;
+  z-index: 5;
+}
+.slick-arrow.slick-next{
+  right: 3% !important;
+}
+.slick-arrow.slick-prev{
+  left: 3% !important;
+}
+.slick-prev:before{
+  font-size: 25px; 
+  color:white;
+}
+.slick-next:before{
+  font-size: 25px; 
+  color: white;
+}
+.slick-arrow:hover{
+  background-color: #A868D9; 
+}
+.sliderMain .itemBanner{
+  position: relative;
+}
+.sliderMain .itemBanner .info{
+  position: absolute;
+  top: 7%;
+  left: 10%; 
+  z-index: 20;
+  color: white;
+}
+.sliderMain .itemBanner .info h2 {
+  font-size: 35px;
+  font-family: "Montserrat", sans-serif !important;
+  color: #F2F3F4;
+}
+.sliderMain .itemBanner .info p{
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif !important;
+}
+.sliderMain .itemBanner .info button {
+  background-color: #A868D9;
+  width: 300px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color:white;
+  border-radius: 10px
+}
+.search span{
+  color: black;
+  font-size: 14px;
+  background-color: white;
+  border-radius: 0 10px 10px 0;
+}
+.search{
+    display:flex;
+    background-color: white;
+
+    border-radius: 10px;
+    color:black;
+}
+.search input{
+    background: transparent;
+    padding: 3px;
+    border: 0;
+    outline: 0;
+    color: black;
+    width: 500px;
+    font-size: 18px;
+    height: 20px;
+}
+@media only screen and (max-width: 464px) {
+  .slick-arrow{
+    width: 10px;
+    height: 10px;
+  }
+  .banner{
+    margin-top: 150px;
+  }
+  .sliderMain .itemBanner .info h2 {
+   font-size: 20px;
+  
+  }
+  .sliderMain .itemBanner .info p {
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif !important;
+  }
+  .search input {
+    width: 50px;
+  }
+  .sliderMain .itemBanner .info button {
+  background-color: #A868D9;
+  width: 200px;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  color: white;
+}
+  .banner{
+    margin-top: 90px;
+  }
+}

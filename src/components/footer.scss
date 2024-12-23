@@ -1,0 +1,51 @@
+
+@font-face {
+  font-family: Montserrat;
+  src: url("./montserrat.ttf");
+  font-weight: 500;
+}
+body{
+  font-family: "Montserrat", sans-serif !important;
+}
+.footer{
+  color: black;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 45px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.footer p {
+  text-align: center;
+  
+}
+.footer .footerItem{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.footerItem img {
+  width: 160px;
+  
+}
+.footer .footerItem .card{
+  width: 150px;
+}
+.footer .footerItem .card img {
+  width: 60px;
+  margin: 5px;
+  border-radius: 5px;
+}
+@media only screen and (max-width: 464px) {
+  .footer .footerItem {
+    justify-content: center;
+    text-align: center;
+  }
+  .footer .footerItem .card{
+    width: 140px;
+  }
+  .footerItem img {
+    width: 140px;
+  }
+}

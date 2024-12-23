@@ -1,0 +1,220 @@
+@font-face {
+  font-family: Montserrat;
+  src: url("./montserrat.ttf");
+  font-weight: 500;
+}
+body{
+  font-family: "Montserrat", sans-serif !important;
+}
+.profile{
+
+   display: flex;
+   justify-content: center;
+  
+ }
+.profileBox .profileInfo{
+  display: flex;
+  flex-direction: column;
+  background: white;
+  text-align: center;
+  align-items: center;
+  height: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background: #D2A2F8;
+}
+.profile .profileInfo .profileImg .file {
+  width: 70px;
+  height: 50px;
+}
+.profile .profileInfo1 .profileImg 
+{
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+justify-content: center;
+}
+.profile .profileInfo input {
+  border: none;
+  width: 90%;
+  height: 50px;
+  padding-left: 5px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.profile .profileInfo textarea {
+  width: 90%;
+  border: none;
+  height: 200px;
+  padding: 5px;
+  font-size: 15px;
+  border-radius: 10px;
+  margin: 20px;
+}
+.profile .profileInfo .btn-submit {
+  width: 150px;
+  height: 50px;
+  border: none;
+  background: white;
+  color: #BF77F6;
+  border-radius: 5px;
+}
+.profile .profileBox .profileInfo img {
+  margin-top: 50px;
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+}
+label{
+  color: white;
+  margin: 10px;
+  font-size: 23px;
+
+  font-weight: 500;
+}
+.profileInfo .buttonBox {
+  display: flex;
+  flex-wrap: wrap;
+}
+.profileInfo .buttonBox button {
+  outline: none;
+  border: none;
+  background: white;
+  color: #BF77F6;
+  width: 90px;
+  margin: 5px;
+  height: 40px;
+  border-radius: 5px;
+  text-align: center;
+}
+.profileInfo .buttonBox button a {
+  text-decoration: none;
+  color: #BF77F6;
+}
+.profile .profileBox1 {
+  height: 100%;
+  background: white;
+}
+.profileBox1 .profileInfo1{
+  display: flex;
+  flex-direction: column;
+  background: white;
+  align-items: center;
+  height: 100%;
+  padding: 10px;
+  border-radius: 5px;
+}
+.profile .profileInfo1 .file {
+  border: none;
+  width: 70px;
+  height: 50px;
+}
+ .pagButton {
+  width: 50px;
+  height: 50px;
+  background: white;
+  border: 1px solid #BF77F6;
+  color: black;
+}
+.pagButton.now {
+  background: #BF77F6;
+  color: white;
+}
+
+.pagButton.none {
+  display: none;
+}
+.profile .profileInfo1 input{
+  
+  border: 3px solid #BF77F6;
+  width: 100%;
+  height: 50px;
+
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.profile .profileInfo1 textarea {
+  width: 98%;
+  border: 3px solid #BF77F6;
+  height: 200px;
+  padding: 5px;
+  
+  font-size: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.profile .profileInfo1 .btn-submit1 {
+  width: 150px;
+  height: 50px;
+  border: none;
+  background: #BF77F6;
+  color: white;
+  border-radius: 5px;
+}
+.profile .profileInfo1 img {
+  margin-top: 0px;
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+}
+label{
+  color: black;
+  margin: 10px;
+  font-size: 23px;
+
+  font-weight: 500;
+}
+.profileInfo1 .buttonBox {
+  display: flex;
+  flex-wrap: wrap;
+}
+.profileInfo1 .buttonBox button {
+  outline: none;
+  border: none;
+  background: #BF77F6;
+  color: white;
+  width: 90px;
+  margin: 5px;
+  height: 40px;
+  border-radius: 5px;
+  text-align: center;
+}
+.profileInfo1 .buttonBox button a {
+  text-decoration: none;
+  color: #BF77F6;
+}
+.profileBox{
+ 
+}
+.profileDetail{
+  background: white;
+  padding: 10px;
+
+}
+.profileDetail .list {
+  display: flex;
+  flex-direction: rows;
+  padding-top: 5px;
+  padding-left: 5px;
+  margin-top: 5px;
+  color: black;
+}
+.profileDetail .list .link {
+  text-decoration: none;
+  color: black;
+  margin-right: 20px;
+}
+.profileDetail .list .link.active {
+  border-bottom: 2px solid #BF77F6;
+}
+.profileInfo img {
+  width: 100%;
+}
+@media only screen and (max-width: 464px) {
+  .profile{
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,510 @@
+
+@font-face {
+  font-family: Montserrat;
+  src: url("./montserrat.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url("./montserratBold.ttf");
+  font-weight: 600;
+}
+body{
+  font-family: "Montserrat", sans-serif ;
+  background-color: #F5F7F8;
+}
+.outlet {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.outline{
+  width: 100%;
+  height: 115px;
+  display: flex;
+  justify-content: center;
+}
+.navi{
+  width: 100%;
+  display: flex;
+  height: 115px;
+  background: #BF77F6;
+  top:0;
+  right: 0;
+  left: 0;
+  position: fixed;
+  z-index: 10000;
+  justify-content: center;
+  align-items: center;
+}
+.secNavi li a:hover{
+  background-color: #D2A2F8;
+}
+.navigation{
+  width: 100%;
+  background-color: #BF77F6;
+  color: white;
+
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  top: 0;
+  left: 0;
+  right: 0;
+  
+  transition: 0.3s;
+  z-index: 9999;
+
+}
+.secNavi {
+  font-family: "Montserrat", sans-serif ;
+  width: 100%;
+  background-color: #A868D9;
+  color: white;
+  position: fixed;
+  height: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  left: 0;
+  right: 0;
+  transition: 0.3s;
+  z-index: 6;
+  margin-top: 125px; 
+  font-weight: 400;
+}
+.navi-mobile{
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 3;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  background: #BF77F6;
+  color: white;
+  height: 60px;
+}
+.navi-mobile .item {
+  text-decoration: none;
+  align-items: center;
+  text-align: center;
+  margin-left: 33px;
+  font-weight: 400;
+  font-size: 15px;
+  flex-direction: column;
+  display: flex;
+  border-radius: 10px;
+  padding: 5px;
+}
+.navi-mobile .item:hover {
+  background-color: #D2A2F8;
+}
+.item img {
+  width: 25px;
+}
+.item .linkm {
+  text-decoration: none;
+  color: white;
+  margin-right: 10px;
+}
+.ima {
+  width: 40px;
+  padding: 10px;
+}
+.logoWeb{
+    height: 60px;
+    width: 120px;
+    cursor: pointer;
+  padding: 10px;
+}
+.secNavi ul{
+    flex: 1;
+    list-style: none;
+    text-align: center;
+}
+.secNavi ul li{
+    display: inline-block;
+    margin: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 300px;
+    font-family: "Montserrat", sans-serif ;
+}
+.secNavi ul li a{
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  font-family: "Montserrat", sans-serif ;
+}
+.image{
+  width: 30px;
+}
+
+.search img {
+  width: 25px;
+  
+}
+.search{
+    display:flex;
+    align-items: center;
+    background-color: white;
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+.search input{
+    background: transparent;
+    padding: 3px;
+    border: 0;
+    outline: 0;
+    color: black;
+    width: 500px;
+    font-size: 18px;
+    height: 20px;
+}
+.menu-trigger p{
+  overflow: hidden;
+  cursor: pointer;
+  padding: 10px;
+  color: black;
+}
+.icon {
+  padding-right: 10px;
+}
+.icon img{
+  width: 30px;
+}
+.dropdownmenu{
+  position: absolute;
+  top: 100px;
+  right: 20px;
+  background-color: black;
+  width: 200px;
+  padding: 10px 20px;
+  border-radius: 15px;
+  z-index: 10;
+}
+.dropdownmenu::before{
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: 20px;
+  height: 20px;
+  width: 20px;
+  transform: rotate(45deg);
+}
+.dropdownmenu.active {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+  transform: translateY(0);
+}
+.dropdownmenu.deactive{
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+  transform: translateY(-20px);
+}
+h3{
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  padding: 20px 0;
+  font-weight: 500;
+  line-height: 1.2rem;
+}
+h3 span{
+  font-size: 14px;
+  color: grey;
+  font-weight:400px;
+}
+.dropdownmenu ul li{
+  padding: 10px 0;
+  border-top: 1px solid rgba(0,0,0,0.5);
+}
+.dropdownmenu ul li:hover{
+  cursor: pointer;
+  color: purple;
+}
+.dropdownmenu ul li:hover img{
+  opacity: 1;
+  cursor: pointer;
+}
+.menu-item {
+  flex-direction: column;
+  padding-top: 25px;
+}
+.dropdownitem{
+  display: flex;
+  margin: 10px auto;
+  border-radius: 10px;
+  padding: 10px;
+  font-weight: 400;
+  text-decoration: none;
+}
+.dropdownitem:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  background: #D2A2F8;
+}
+
+.dropdownitem img {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  obacity: 0.5;
+  transition: 0.5s;
+}
+.dropdownitem .link{
+  font-size: 15px;
+  margin-left: 10px;
+  transition: 0.5s;
+  text-decoration: none;
+  color: white;
+  
+}
+.vvd{
+  height: 40px;
+  width: 90px;
+  color: white;
+  background-color: black;
+  margin-left: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  border: 1px solid white;
+}
+.vvd:hover{
+  background: white;
+  color: black;
+}
+.vvd a {
+  text-decoration: none;
+  color: white;
+}
+.menu-trigger1 img{
+  overflow: hidden;
+  cursor: pointer;
+  padding: 10px;
+}
+.dropdownmenu1{
+  position: absolute;
+  top: 100px;
+  right: 20px;
+  background-color: #BF77F6;
+  width: 150px;
+  padding: 10px 20px;
+  z-index: 11;
+  border-radius: 10px;
+}
+.dropdownmenu1::before{
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: 20px;
+  height: 20px;
+  width: 20px;
+  transform: rotate(45deg);
+}
+.dropdownmenu1.active1 {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+  transform: translateY(0);
+}
+.dropdownmenu1.deactive1{
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+  transform: translateY(-20px);
+}
+h3{
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  padding: 20px 0;
+  font-weight: 500;
+  line-height: 1.2rem;
+}
+h3 span{
+  font-size: 14px;
+  color: grey;
+  font-weight:400px;
+}
+.dropdownmenu1 ul li{
+  padding: 10px 0;
+  border-top: 1px solid rgba(0,0,0,0.5);
+}
+.dropdownmenu1 ul li:hover{
+  cursor: pointer;
+  color: purple;
+}
+.dropdownmenu1 ul li:hover img{
+  opacity: 1;
+  cursor: pointer;
+;
+}
+
+.dropdownitem1{
+  display: flex;
+  margin: 10px auto;
+  padding: 5px;
+}
+.dropdownitem1:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  border-radius: 10px;
+  background-color: #D2A2F8;
+}
+.dropdownitem1 img {
+  height: 28px;
+  width: 28px;
+  margin-right: 10px;
+  obacity: 0.5;
+  transition: 0.5s;
+  margin-top: 13px;
+}
+.dropdownitem1 .link1{
+  font-size: 15px;
+  margin-left: 10px;
+  transition: 0.5s;
+  text-decoration: none;
+  color: white;
+
+}
+.shopping-bag {
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  
+}
+.shopping-bag img {
+  width: 30px;
+}
+.shopping-bag span{
+  background: red;
+  color: white;
+  align-items: center;
+  text-align: center;
+  width: 20px;
+  border-radius: 50%;
+}
+.sidenav{
+  width: 100%;
+  background: #BF77F6;
+  height: 705px;
+  padding: 40px;
+  margin-top: 700px;
+  transition: 0.4s;
+  transform: translateY(-200%);
+  opacity: 1;
+  z-index: 5;
+  font-family: "Montserrat", sans-serif !important;
+
+}
+.sidenav.active{
+  transform: translateY(-0%);
+  transform: translateX(-17%);
+  transition: 0.4s;
+  obacity: 1
+}
+ul{
+  padding: 0;
+}
+li {
+  list-style-type:none;
+}
+.logo{
+ width: 100px;
+}
+li a {
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  display: block;
+  font-weight: bold;
+  padding: 15px 0px;
+  border-radius: 6px;
+  font-family: "Montserrat", sans-serif !important;
+}
+.user{
+  padding: 10px;
+}
+.user img {
+  width: 30px;
+}
+.n{
+  display: flex;
+}
+.n span { font-size: 40px;
+ margin-left: 200px;
+}
+a svg{
+ margin-right: 10px;
+}
+a span{
+  margin-left: 10px;
+  font-family: "Montserrat", sans-serif ;;
+}
+ul li a:hover,
+ul li a:active{
+  background: white;
+}
+@media only screen and (min-width: 1400px) {
+  .navigation{
+    width: 1400px;
+  }
+  .outlet {
+    width: 1400px;
+  }
+  
+}
+@media only screen and (min-width: 464px) and (max-width: 1400px) {
+  .outline{
+    display: block;
+  }
+}
+@media only screen and (max-width: 464px){
+    .logoWeb{
+       display:none;
+    }
+    .secNavi ul{
+        display: none;
+    }
+    .vvd{
+      display: none;
+    }
+    .menu-trigger1{
+      display: none;
+    }
+    .user{
+      display: none;
+    }
+    .search input{
+      width: 180px;
+    }
+    .secNavi {
+      display: none;
+    }
+    .outline{
+      display: block;
+    }
+}
+
+@media only screen and (min-width: 464px) {
+  .menu-trigger{
+    display: none;
+  }
+  .ima{
+    display: none;
+  }
+  .navi-mobile{
+    display: none;
+  }
+  .sidenav {
+    display: none;
+  }
+}

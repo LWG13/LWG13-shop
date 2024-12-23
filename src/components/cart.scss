@@ -1,0 +1,317 @@
+.cart .cart-box .cart-items .cart-item .cart-pad .heart {
+  margin-left: 20px;
+  margin-top: 20px;
+  width: 40px;
+  height: 40px;
+}
+.cart .grid .naviDetail1{
+  display: flex;
+  background-color: #BF77F6;
+  justify-content: space-between;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 10px;
+  height: 80px;
+}
+.gridO {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  width: 100%,
+}
+.gridDetail{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.grid{
+  display: flex;
+  justify-content: center;
+  background: #BF77F6;
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  
+}
+
+.cart {
+  width: 100%;
+}
+.cart .naviDetail1 .goback1 img {
+  width: 70px;
+}
+.cart .gridO .gridDetail .cart-box{
+  margin-top: 90px;
+  padding: 10px;
+  width: 100%;
+}
+.cart-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-top: 1px solid rgb(187,187,187);
+  padding-top: 2rem;
+  
+}
+.cart-summary .clear-cart{
+  width: 130px;
+  max-width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  font-weight: 400;
+  letter-spacing: 1.15px;
+
+  border: 0.5px solid rgb(177,177,177);
+  color: black;
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+.cart-summary .clear-cart:hover {
+  background: red;
+  color: white;
+  transition: 0.4s;
+}
+.cart-summary .cart-checkout{
+  width: 270px;
+  max-width: 100%;
+  
+}
+.cart-summary .cart-checkbox .subtotal {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+}
+.cart-checkbox .subtotal .amount{
+  font-weight: 700;
+}
+.cart-checkbox p {
+  font-size: 14px;
+  font-weight: 200;
+  margin: 0.5rem;
+  
+}
+.cart-checkbox button {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  background-color: #BF77F6;
+  letter-spacing: 1.15px;
+  
+}
+.continue a, .empty .start-shopping a{
+  color: gray;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.continue a span, .start-shopping spn {
+  margin-left: 0.5rem;
+}
+.cart-summary .cart-checkbox .subtotal .continue {
+  display: flex;
+}
+.continue img {
+  width: 30px;
+}
+.cart-empty {
+  font-size: 20px;
+  margin-top: 2rem;
+  color: rgb(84,84,84);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cart .cart-box .cart-items{
+  width: 100%;
+  border-top: 1px solid rgb(187,187,187);
+  padding: 1rem 0;
+}
+.cart .cart-box .cart-items .cart-item .cart-product {
+  display: flex;
+}
+.cart .cart-box .cart-items .cart-item .cart-pad{
+  width: 500px;
+  float: left;
+}
+.cart .cart-box .title {
+  padding-right: 0.5rem;
+  justify-self: right;
+}
+.cart .cart-box .cart-items .cart-item {
+  width: 100%;
+  background-color: white;
+  margin-bottom: 5px;
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+h4{
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+.cart .cart-box .cart-items .cart-item .total-price{
+}
+.cart .cart-box .cart-items .cart-item img {
+  width: 80px;
+  height: 80px;
+}
+.cart .cart-box .cart-items .cart-item .name {
+  font-size: 17px;
+  overflow: hidden;
+  width: 130px; 
+  white-space: nowrap; 
+  text-overflow: ellipsis;
+}
+.cart .cart-box .cart-items .cart-item .count button{
+  border: none;
+  outline: none;
+  background-color: #BF77F6;
+  color: white;
+  padding: 3px;
+  width: 30px;
+  font-size: 20px;
+}
+.cart .cart-box .cart-items .cart-item .count .number{
+  width: 30px;
+  text-align: center;
+  background-color: #F5F7F8;
+  padding-top: 10px;
+}
+.cart .cart-box .cart-items .cart-item .count{
+  display: flex;
+  margin: 10px;
+  width: 150px;
+  height: 40px;
+}
+.buttonremove {
+  margin-left: 10px;
+  border: none;
+  outline: none;
+  color: white;
+  border-radius: 2px;
+  background-color: #BF77F6;
+  width: 90px;
+  height: 30px;
+}
+.product-box2 {
+  width: 100%;
+  height: auto;
+  padding: 0px
+
+}
+.product-box2 .product-item2 {
+  padding: 6px;
+  background-color: white;
+  color: black;
+  flex-direction: column;
+  text-decoration: none;
+  margin: 10px;
+  height: auto;
+  display: flex;
+  border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+} 
+.product-box2 .product-item2:hover{
+  background-color: white;
+}
+ .product-box2 .product-item2 p {
+  font-size: 15px;
+  padding: 0px;
+  overflow: hidden;
+  width: 150px;
+  white-space: nowrap; 
+  text-overflow: ellipsis;        
+}
+ .product-box2 .product-item2 .price2{
+  font-size: 16px;
+  padding: none;
+  color: #A868D9;
+}
+ .product-box2 .product-item2 img {
+  width: 100%;
+  height: 240px;
+  border-radius: 10px;
+}
+
+.product-box2 .product-item2 span {
+  font-size: 12px;
+}
+.product-box2 .product-item2 .rate2 span{
+   font-size: 22px;
+}
+.product-box2 .product-item2 .rate2 img {
+  height: 25px;
+  width: 25px;
+  margin-top: 10px;
+}
+.product-box2 .product-item2 button {
+  width: 80%;
+  height: 50px;
+  border-radius: 15px;
+  border: none;
+  ouline: none;
+  background-color: #A868D9;
+  color: white;
+}
+.product-box2 .product-item2 .categorial2{
+  background-color: #D2A2F8;
+  color: white;
+  padding: 2px;
+  font-size: 16px;
+}
+.linkMore2 .more2 {
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  padding-bottom: 70px;
+}
+.linkMore2 .more2 .moreButton2 {
+  width: 200px;
+  height: 70px;
+  padding: 5px;
+  background-color: #BF77F6;
+  color: white;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+.linkMore2 .more2 .moreButton2 {
+  text-decoration: none;
+  font-size: 20px;
+  color: #BF77F6;
+  background: white;
+  font-family: "Monserrat", sans-serif;
+  border: 4px solid #BF77F6;
+  transition: 0.4s;
+}
+.linkMore2 .more2 .moreButton2:hover {
+  color:white;
+  background: #BF77F6;
+  transition: 0.4s;
+}
+@media only screen and (max-width: 464px) {
+  .product-box2 .product-item2 img{
+    height: 130px;
+  }
+}
+@media only screen and (min-width: 1400px){
+  .cart .grid .naviDetail1{
+    width: 1400px;
+  }
+  .gridDetail{
+    width: 1400px;
+  }
+}

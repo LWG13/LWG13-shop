@@ -1,0 +1,397 @@
+
+@font-face {
+  font-family: Montserrat;
+  src: url("./montserrat.ttf");
+  font-weight: 500;
+}
+body{
+  font-family: "Montserrat", sans-serif !important;
+}
+.i {
+  width: 100%;
+  background-color: #F5F7F8;
+}
+.i .detail{
+  padding-top: 30px;
+  padding-bottom: 70px;
+  width:100%;
+
+}
+.grid{
+  display: flex;
+  justify-content: center;
+  background: #BF77F6;
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.naviDetail{
+  display: flex;
+  width: 100%;
+  background-color: #BF77F6;
+  justify-content: space-between;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 80px;
+  padding-left: 5px;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+.i .naviDetail img{
+  width: 45px;
+  padding: 10px;
+}
+.i .naviDetail .goback img {
+  width: 55px;
+  padding-bottom: 20px;
+}
+.gridO {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.gridDetail{
+  width: 100%;
+  display: flex;
+}
+.i .secNaviDetail {
+  display: flex;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 60px;
+  background-color: #BF77F6;
+  padding: 5px;
+}
+.i .detail .product-item .buy .button1{
+  width: 250px;
+  height: 60px;
+  border: none;
+  outline: none;
+  background-color: #BF77F6;
+  color: white;
+  font-family: "Montserrat", sans-serif !important;
+  margin: 10px;
+}
+.i .detail .product-item .buy .button2{
+  width: 250px;
+  height: 60px;
+  border: 2px solid #BF77F6;
+  outline: none;
+  background-color: white;
+  color: #BF77F6;
+  font-family: "Montserrat", sans-serif !important;
+  margin: 10px;
+}
+.i .detail .commental{
+  background-color: white;
+  padding: 10px;
+  margin-top: 20px;
+}
+.i .detail .userProfile {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  padding: 11px;
+}
+.i .detail .userProfile .userDetail {
+  display: flex;
+  padding: 15px;
+  text-decoration: none;
+}
+.i .detail .userProfile .userDetail img {
+  width: 100px;
+}
+.i .detail .userProfile .userDetail .userInfo {
+  padding-left: 20px;
+  color: black;
+}
+.i .detail .userProfile img {
+  width: 100px;
+  height: 100px;
+}
+.i .secNaviDetail .button1 {
+  width: 100%;
+  border: none;
+  outline: none;
+  
+  background-color: #BF77F6;
+  color: white;
+  font-family: "Montserrat", sans-serif !important;
+}
+
+.i .secNaviDetail .button2 {
+  width: 100%;
+  border: 2px solid #BF77F6;
+  outline: none;
+  background-color: white;
+  color: #BF77F6;
+  font-family: "Montserrat", sans-serif !important;
+}
+
+.i .detail .product-item {
+  width: 100%;
+  display: flex;
+  background-color: white;
+  padding-top: 15px;
+}
+
+.i .detail .product-item img {
+  width: 100%;
+  
+  height: 380px;
+}
+.i .detail .product-item .info-detail {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+}
+
+.i .detail .product-item .info-detail .price{
+  color: #BF77F6;
+  padding: 10px;
+  font-size: 30px;
+}
+.i .detail .product-item .info-detail .ca .cate {
+  font-weight: bold;
+  font-size: 18px;
+}
+.i .detail .product-item .info-detail .ca{
+ display:flex;
+  margin-top: 13px;
+}
+.i .detail .product-item .info-detail .count{
+  display: flex;
+  margin: 20px;
+  width: 190px;
+  height: 40px;
+}
+.i .detail .product-item .info-detail .count .number{
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  background-color: #F5F7F8;
+}
+.i .detail .product-item .info-detail .count button{
+  border: none;
+  outline: none;
+  background-color: #BF77F6;
+  color: white;
+  padding: 10px;
+  width: 50px;
+  font-size: 20px;
+}
+.detail .product-item .info-detail .ca span{
+  padding-left: 15px;
+  padding-top: 10px;
+}
+.detail .product-item .info-detail .rate {
+  width: 100%;
+  display: flex;
+}
+.detail .product-item .info-detail .rate span{
+   font-size: 22px;
+  padding: 5px;
+}
+.detail .product-item .info-detail .rate img {
+  height: 20px;
+  width: 20px;
+  margin-top: 10px;
+}
+.detail .product-item .info-detail .heartful{
+  height: 50px;
+  width: 50px;
+  margin-top: 24px;
+}
+.i .detail .desc {
+  background: white;
+  margin-top: 30px;
+  padding: 10px;
+}
+h3 {
+  font-size: 19px;
+}
+// product
+
+.i .detail .product-box1 {
+  width: 100%;
+  height: auto;
+  padding: 0px
+
+}
+.i .detail .product-box1 .product-item1 {
+  padding: 15px;
+  background-color: white;
+  color: black;
+  flex-direction: column;
+  text-decoration: none;
+  margin: 10px;
+  height: auto;
+  display: flex;
+  border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+} 
+.i .detail .product-box1 .product-item1:hover{
+  background-color: white;
+}
+.i .detail .product-box1 .product-item1 p {
+  font-size: 15px;
+  padding: 0px;
+  overflow: hidden;
+  width: 150px;
+  white-space: nowrap; 
+  text-overflow: ellipsis;        
+}
+.i .detail .product-box1 .product-item1 .price1{
+  font-size: 16px;
+  padding: none;
+  color: #A868D9;
+}
+.i .detail .product-box1 .product-item1 img {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+}
+
+.i .detail .product-box1 .product-item1 span {
+  font-size: 12px;
+}
+.i .detail .product-box1 .product-item1 .rate1 span{
+   font-size: 22px;
+}
+.i .detail .product-box1 .product-item1 .rate1 img {
+  height: 25px;
+  width: 25px;
+  margin-top: 10px;
+}
+.i .detail .product-box1 .product-item1 button {
+  width: 80%;
+  height: 50px;
+  border-radius: 15px;
+  border: none;
+  ouline: none;
+  background-color: #A868D9;
+  color: white;
+}
+.i .detail .product-box1 .product-item1 .categorial1{
+  background-color: #D2A2F8;
+  color: white;
+  padding: 2px;
+  font-size: 16px;
+}
+.linkMore1 .more1 {
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  padding-bottom: 70px;
+}
+.linkMore1 .more1 .moreButton1 {
+  width: 200px;
+  height: 70px;
+  padding: 5px;
+  background-color: #BF77F6;
+  color: white;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+.linkMore1 .more1 .moreButton1 {
+  text-decoration: none;
+  font-size: 20px;
+  color: #BF77F6;
+  background: white;
+  font-family: "Monserrat", sans-serif;
+  border: 4px solid #BF77F6;
+  transition: 0.4s;
+}
+.linkMore1 .more1 .moreButton1:hover {
+  color:white;
+  background: #BF77F6;
+  transition: 0.4s;
+}
+.shop {
+  margin-top: 10px;
+}
+@media only screen and (min-width: 1400px) {
+  .naviDetail {
+   width: 1400px;
+  }
+  .gridDetail{
+   width: 1400px;
+  }
+}
+@media only screen and (max-width: 464px) {
+  .i .detail .product-item .info-detail{
+    padding: 0;
+  }
+  .i .detail .product-box1 .product-item1 p {
+    font-size: 13px;
+  }
+  .i .detail .product-box1 .product-item1 .rate1 img {
+  height: 20px;
+  width: 20px;
+  margin-top: 10px;
+  }
+  .i .detail .product-box1 .product-item1 .rate1 span{
+   font-size: 14px;
+  }
+  .i .detail .product-box1 .product-item1 {
+  padding: 10px;
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  margin: 10px;
+  height: auto;
+  
+  border-radius: 5px;
+  font-family: "Montserrat", sans-serif
+}
+  .i .detail .product-box1 .product-item1 img {
+  width: 100%;
+  height: 160px;
+  border-radius: 10px;
+  }
+  .i .detail .product-box1 .product-item1 .price1{
+    font-size: 16px;
+    padding: none;
+  }
+}
+
+
+@media only screen and (max-width: 464px) {
+  .i .detail .product-item{
+    flex-direction: column;
+    
+  }
+  .i .detail .product-item .info-detail .price{
+    font-size: 22px;
+    color: #BF77F6;
+    padding: 10px;
+  }
+  .i .detail .product-item .info-detail h1 {
+    font-size: 27px;
+  }
+  .i .detail .desc p{
+    font-size: 14px;
+  }
+  .i .detail .product-item .buy .button1{ display: none;}
+  .i .detail .product-item .buy .button2{ display: none;}
+}
+@media only screen and (min-width: 464px) {
+  .i .secNaviDetail{
+    display: none;
+  }
+  
+}
