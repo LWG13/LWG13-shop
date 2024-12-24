@@ -6,9 +6,7 @@
   "description": "React TypeScript on Replit, using Vite bundler",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist -r https://github.com/LWG13/lwg13-shop.git"
+    "build": "vite build"
   },
   "keywords": [],
   "author": "",
