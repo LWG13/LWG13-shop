@@ -33,7 +33,7 @@ console.log(user)
   }
   return (
     <div className="wrapper1">
-      <Form action="" method="post" control={control} onSubmit={handleSubmit}>
+      <Form action="" method="POST" control={control} onSubmit={handleSubmit}>
        <h1>Sign Up</h1> 
        <div className="input-box">
          <input type="text" placeholder="Username"  {...register("username", { required: {value: true, message: "Username is required" }})} onChange={(e => setUser({...user, username: e.target.value}))} />
