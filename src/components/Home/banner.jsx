@@ -30,10 +30,7 @@ export default function Banner() {
              </h2>
              <p>Sign up for the daily newsletter</p>
             
-             <div className="search">
-       <input type="text" placeholder="Searching.." />
-       <span>| Submit</span>
-      </div>
+             
         </div>
 
          </div>

@@ -228,7 +228,7 @@ h4{
   font-size: 15px;
   padding: 0px;
   overflow: hidden;
-  width: 150px;
+  width: 100%;
   white-space: nowrap; 
   text-overflow: ellipsis;        
 }
@@ -278,7 +278,7 @@ h4{
   padding-bottom: 70px;
 }
 .linkMore2 .more2 .moreButton2 {
-  width: 200px;
+  width: 180px;
   height: 70px;
   padding: 5px;
   background-color: #BF77F6;
@@ -307,11 +307,11 @@ h4{
     height: 130px;
   }
 }
-@media only screen and (min-width: 1400px){
+@media only screen and (min-width: 1200px){
   .cart .grid .naviDetail1{
-    width: 1400px;
+    width: 1200px;
   }
   .gridDetail{
-    width: 1400px;
+    width: 1200px;
   }
 }

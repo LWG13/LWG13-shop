@@ -64,7 +64,7 @@ body{
   background-color: #A868D9;
   color: white;
   position: fixed;
-  height: 35px;
+  height: 41px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -88,15 +88,16 @@ body{
   background: #BF77F6;
   color: white;
   height: 60px;
+  flex: 1;
 }
 .navi-mobile .item {
   text-decoration: none;
   align-items: center;
   text-align: center;
-  margin-left: 33px;
   font-weight: 400;
   font-size: 15px;
   flex-direction: column;
+  width: 30%;
   display: flex;
   border-radius: 10px;
   padding: 5px;
@@ -115,6 +116,7 @@ body{
 .ima {
   width: 40px;
   padding: 10px;
+  
 }
 .logoWeb{
     height: 60px;
@@ -124,22 +126,25 @@ body{
 }
 .secNavi ul{
     flex: 1;
+  height:100px;
     list-style: none;
     text-align: center;
 }
 .secNavi ul li{
     display: inline-block;
-    margin: 20px;
+    margin-top: 20px;
     font-size: 14px;
     cursor: pointer;
-    font-weight: 300px;
+    font-weight: 300;
     font-family: "Montserrat", sans-serif ;
+  width: 100px;
 }
 .secNavi ul li a{
   color: white;
   text-decoration: none;
   padding: 20px;
   font-family: "Montserrat", sans-serif ;
+
 }
 .image{
   width: 30px;
@@ -155,6 +160,7 @@ body{
     background-color: white;
     padding: 10px 10px;
     border-radius: 10px;
+    width: 50%;
 }
 .search input{
     background: transparent;
@@ -162,7 +168,7 @@ body{
     border: 0;
     outline: 0;
     color: black;
-    width: 500px;
+    width: 100%;
     font-size: 18px;
     height: 20px;
 }
@@ -186,7 +192,8 @@ body{
   width: 200px;
   padding: 10px 20px;
   border-radius: 15px;
-  z-index: 10;
+  z-index: 10; display: flex;
+  flex-direction: column;
 }
 .dropdownmenu::before{
   content: "";
@@ -241,6 +248,9 @@ h3 span{
 .dropdownitem{
   display: flex;
   margin: 10px auto;
+  float: left;
+  margin-right: 20px;
+  
   border-radius: 10px;
   padding: 10px;
   font-weight: 400;
@@ -393,9 +403,9 @@ h3 span{
   border-radius: 50%;
 }
 .sidenav{
-  width: 100%;
+  width: 464px;
   background: #BF77F6;
-  height: 705px;
+  height: 700px;
   padding: 40px;
   margin-top: 700px;
   transition: 0.4s;
@@ -440,7 +450,7 @@ li a {
   display: flex;
 }
 .n span { font-size: 40px;
- margin-left: 200px;
+ margin-left: 140px;
 }
 a svg{
  margin-right: 10px;
@@ -453,16 +463,16 @@ ul li a:hover,
 ul li a:active{
   background: white;
 }
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1200px) {
   .navigation{
-    width: 1400px;
+    width: 1200px;
   }
   .outlet {
-    width: 1400px;
+    width: 1200px;
   }
   
 }
-@media only screen and (min-width: 464px) and (max-width: 1400px) {
+@media only screen and (min-width: 464px) and (max-width: 1200px) {
   .outline{
     display: block;
   }
@@ -483,8 +493,8 @@ ul li a:active{
     .user{
       display: none;
     }
-    .search input{
-      width: 180px;
+    .search{
+      width: 30%; 
     }
     .secNavi {
       display: none;

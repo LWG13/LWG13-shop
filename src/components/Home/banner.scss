@@ -85,22 +85,23 @@
   color:white;
   border-radius: 10px
 }
-.search span{
+.search1 span{
   color: black;
   font-size: 14px;
   background-color: white;
   border-radius: 0 10px 10px 0;
 }
-.search{
+.search1{
     display:flex;
     background-color: white;
 
     border-radius: 10px;
     color:black;
 }
-.search input{
+.search1 input{
     background: transparent;
-    padding: 3px;
+    padding: 5px;
+  height:90px;
     border: 0;
     outline: 0;
     color: black;

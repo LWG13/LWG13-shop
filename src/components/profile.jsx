@@ -34,7 +34,7 @@ export default function Profile() {
     <Link to="/LWG13-shop/" >
      <img src={goback} alt="go back" width="90px" />
     </Link>
-    <Link to="/LWG13-shop/LWG13-shop/cart">
+    <Link to="/LWG13-shop/cart">
      <img src={shopping} alt="cart" width="55px" className="shop"/>
     </Link>
      </div>

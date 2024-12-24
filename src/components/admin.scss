@@ -7,21 +7,19 @@ body{
   font-family: "Montserrat", sans-serif !important;
 }
 .admin {
-  width: 100%;
   padding: 5px;
 }
 .sidebar{
   background: white;
   padding: 10px;
   margin-top: 20px;
-  width: 30%;
   height: 95vh;
+  padding-right: 110px;
   display: flex;
   position: fixed;
   flex-direction: column;
 }
 .sidebar .sidebar-list {
-  width: 90%;
   border-radius: 10px;
   height: 50px;
   padding: 10px;
@@ -140,12 +138,12 @@ h3 span{
   color: white;
   
 }
-@media only screen and (max-width: 464px) {
+@media only screen and (max-width: 850px) {
   .sidebar{
     display: none;
   }
 }
-@media only screen and (min-width: 464px) {
+@media only screen and (min-width: 850px) {
   .menu-trigger10{
     display: none;
   }
