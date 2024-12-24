@@ -15,13 +15,13 @@ export default function Otp() {
   }
   const navigate = useNavigate()
   useEffect(() => {
-    if(auth.secondAuth === true) navigate("/lwg13-shop/reset-password")
+    if(auth.secondAuth === true) navigate("/LWG13-shop/reset-password")
   },[auth.secondAuth, navigate])
   const { control, register, formState: { errors } } = useForm()
 return(
   <div className="loginPage" >
                   <div className="naviDetail1">
-        <Link to="/lwg13-shop/login" className="goback1">
+        <Link to="/LWG13-shop/login" className="goback1">
         <img src={goback} alt="go back" />
         </Link>
       </div>

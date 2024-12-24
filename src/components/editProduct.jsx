@@ -22,7 +22,7 @@ export default function EditProduct() {
   const auth = useSelector((state) => state.auth);
   useEffect(() => {
     if (auth.editProductSuccess === true)
-      navigate("/lwg13-shop.git/admin/product");
+      navigate("/LWG13-shop/admin/product");
   });
   const { data } = useQuery(["product", productId.productId], () => axios.get(`https://ecommerce-server-y5yv.onrender.com/product/${productId.productId}`))
   const [title, setTitle] = useState(data?.data.title);
@@ -63,7 +63,7 @@ export default function EditProduct() {
      <div className="createProduct">
       <div className="grid">
         <div className="naviDetail">
-          <Link to={`/lwg13-shop.git/admin`}>
+          <Link to={`/LWG13-shop/admin`}>
             <img src={goback} alt="go back" width="90px" />
           </Link>
         </div>

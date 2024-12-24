@@ -50,103 +50,103 @@ store.dispatch(getTotals())
 store.dispatch(loadUser(null))
 const router = createBrowserRouter([
   {
-    path: "/lwg13-shop.git/",
+    path: "/LWG13-shop/",
     element: <Navigation />,
     children: [
       {
-        path: "/lwg13-shop.git/",
+        path: "/LWG13-shop/",
         element: <Home />
       },
       {
-        path: "/lwg13-shop.git/category",
+        path: "/LWG13-shop/category",
         element: <Category />,
         children: [
           {
-            path: "/lwg13-shop.git/category/:category",
+            path: "/LWG13-shop/category/:category",
             element: <CategoryType />
           },
         ]
       },
       {
-        path: "/lwg13-shop.git/contact",
+        path: "/LWG13-shop/contact",
         element: <Contact />
       },
       {
-        path: "/lwg13-shop.git/faq",
+        path: "/LWG13-shop/faq",
         element: <Faq />
       }
     ]
   },
   {
-     path: "/lwg13-shop.git/:productId",
+     path: "/LWG13-shop/:productId",
      element: <Detail />
   },
   {
-    path: "/lwg13-shop.git/cart",
+    path: "/LWG13-shop/cart",
     element: <Cart />
   },
   {
-    path: "/lwg13-shop.git/favourite",
+    path: "/LWG13-shop/favourite",
     element: <Favourite />
   },
   {
-    path: "/lwg13-shop.git/login",
+    path: "/LWG13-shop/login",
     element: <LoginPage />
   },
   {
-    path: "/lwg13-shop.git/signup",
+    path: "/LWG13-shop/signup",
     element: <SignupPage />
   },
   {
-    path: "/lwg13-shop.git/profile/:profileId",
+    path: "/LWG13-shop/profile/:profileId",
     element: <Profile />,
     children: [
         {
-          path: "/lwg13-shop.git/profile/:profileId",
+          path: "/LWG13-shop/profile/:profileId",
           element: <HomeProfile />
         },
       {
-        path: "/lwg13-shop.git/profile/:profileId/product",
+        path: "/LWG13-shop/profile/:profileId/product",
         element: <ProfileProduct />
       }
     ]
   },
   {
-    path: "/lwg13-shop.git/profile/edit/:profileId",
+    path: "/LWG13-shop/profile/edit/:profileId",
     element: <EditProfile />
   },
   {
-    path: "/lwg13-shop.git/email",
+    path: "/LWG13-shop/email",
     element: <EmailPassword />
   },
   {
-    path: "/lwg13-shop.git/otp",
+    path: "/LWG13-shop/otp",
     element: <Otp />
   },
   {
-    path: "/lwg13-shop.git/reset-password",
+    path: "/LWG13-shop/reset-password",
     element: <ResetPassword />
   },
   {
-    path: "/lwg13-shop.git/admin",
+    path: "/LWG13-shop/admin",
     element: <Admin />,
     children: [
       {
-        path: "/lwg13-shop.git/admin",
+        path: "/LWG13-shop/admin",
         element: <Overview />
       },
       {
-        path: "/lwg13-shop.git/admin/product",
+        path: "/LWG13-shop/admin/product",
         element: <AdminProduct />
       }
     ]
   },
   {
-    path: "/lwg13-shop.git/create-product",
+    path: "/LWG13-shop/create-product",
     element: <CreateProduct />
   },
   {
-    path: "/lwg13-shop.git/edit-product/:productId",
+    path: "/LWG13-shop/edit-product/:productId",
     element: <EditProduct />
   }
 ]);

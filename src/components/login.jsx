@@ -16,7 +16,7 @@ export default function Login() {
   console.log(user)
   const navigate = useNavigate()
   useEffect(() => {
-    if(auth._id) { navigate("/lwg13-shop.git/")}
+    if(auth._id) { navigate("/LWG13-shop/")}
   },[auth._id, navigate])
   const dispatch = useDispatch()
   const handleSubmit = () => {
@@ -38,11 +38,11 @@ export default function Login() {
        <span style={{color: "red"}}>{auth.loginError}</span>
       )  : null}
       <br/>
-       <Link to="/lwg13-shop.git/email" className="Link">Forgot password?</Link>
+       <Link to="/LWG13-shop/email" className="Link">Forgot password?</Link>
        
        <button className="btn">Login</button>
       <div className="register-link">
-       <p>Don't Have An Account?<Link to="/lwg13-shop.git/signup">.  Register</Link></p>
+       <p>Don't Have An Account?<Link to="/LWG13-shop/signup">.  Register</Link></p>
         <br/>
       </div>
      </Form>

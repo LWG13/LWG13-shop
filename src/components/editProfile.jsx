@@ -33,7 +33,7 @@ export default function EditProfile() {
   const dispatch = useDispatch()
   const navigate = useNavigate()
   useEffect(() => {
-   if(auth.editedProfile) navigate(`/lwg13-shop.git/profile/${auth._id}`)
+   if(auth.editedProfile) navigate(`/LWG13-shop/profile/${auth._id}`)
   },[navigate, auth.editedProfile])
   const previewFile= (file) => {
     const reader = new FileReader()
@@ -57,7 +57,7 @@ export default function EditProfile() {
     <div className="grid">
     
   <div className="naviDetail">
-    <Link to={`/lwg13-shop.git/profile/${auth._id}`} >
+    <Link to={`/LWG13-shop/profile/${auth._id}`} >
      <img src={goback} alt="go back" width="90px" />
     </Link>
      </div>

@@ -15,7 +15,7 @@ export default function Signup() {
     const auth = useSelector((state) => state.auth)
     console.log(auth)
   useEffect(() => {
-    if(auth._id) navigate("/lwg13-shop.git/")
+    if(auth._id) navigate("/LWG13-shop/")
   },[auth._id, navigate])
 
   
@@ -66,7 +66,7 @@ console.log(user)
       )  : null}
        <button className="btn" disabled={!isDirty || isSubmitting }>Sign Up</button>
       <div className="register-link">
-       <p>Already Have Account?<Link to="/lwg13-shop.git/login">.  Log In</Link></p>
+       <p>Already Have Account?<Link to="/LWG13-shop/login">.  Log In</Link></p>
         <br/>
       </div>
      </Form>

@@ -19,12 +19,12 @@ export default function ResetPassword() {
     dispatch(resetPassword(user))
   }
   useEffect(() => {
-    if(auth.successReset === true) navigate("/lwg13-shop.git/login")
+    if(auth.successReset === true) navigate("/LWG13-shop/login")
   }, [auth.successReset, navigate])
   return(
     <div className="loginPage" >
                   <div className="naviDetail1">
-        <Link to="/lwg13-shop.git/login" className="goback1">
+        <Link to="/LWG13-shop/login" className="goback1">
         <img src={goback} alt="go back" />
         </Link>
       </div>

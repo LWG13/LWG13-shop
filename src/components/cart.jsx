@@ -35,7 +35,7 @@ export default function Cart() {
     <div className="cart">
      <div className="grid">
       <div className="naviDetail1">
-        <Link to="/lwg13-shop.git/" className="goback1">
+        <Link to="/LWG13-shop/" className="goback1">
         <img src={goback} alt="go back" />
         </Link>
       </div>
@@ -49,7 +49,7 @@ export default function Cart() {
           {cart.cartItem.length === 0 ? (
       <div className="empty">
        <p>Your cart is currently empty</p>
-       <Link to="/lwg13-shop.git/" className="start-shopping">Start Shopping</Link>
+       <Link to="/LWG13-shop/" className="start-shopping">Start Shopping</Link>
       </div>
           ) : (
             <div className="cart-items">
@@ -90,7 +90,7 @@ export default function Cart() {
                <button>{auth.userLoaded ? "Check Out" : "login to check out"}</button>
                <div className="continue">
                 
-                <Link to="/lwg13-shop.git/"><span>Continue Shopping</span></Link>
+                <Link to="/LWG13-shop/"><span>Continue Shopping</span></Link>
                </div>
                 </div>
               </div>
@@ -105,7 +105,7 @@ export default function Cart() {
               {datas && datas.data && Array.isArray(datas.data) ? 
                 datas.data.map((item) => 
                 <Grid item xs={6} sm={3} md={4}>
-                 <Link to={`/lwg13-shop.git/${item._id}`}  className="product-item2">
+                 <Link to={`/LWG13-shop/${item._id}`}  className="product-item2">
                   <img src={item.image} alt="product" />
                   <p>{item.title}</p>
                   <span className="price2">${item.price}</span>
@@ -114,7 +114,7 @@ export default function Cart() {
                 </Grid>
               ): <p>loading..</p>}
               </Grid>
-                   <Link to="/lwg13-shop.git/category" className="linkMore"><div className="more"><button className="moreButton">Look More</button></div></Link>
+                   <Link to="/LWG13-shop/category" className="linkMore"><div className="more"><button className="moreButton">Look More</button></div></Link>
             </div>
      
       <Footer />

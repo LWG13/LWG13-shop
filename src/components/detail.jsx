@@ -40,10 +40,10 @@ export default function Detail() {
    <div className="i">
    <div className="grid">
     <div className="naviDetail">
-    <Link to="/lwg13-shop.git/" className="goback" >
+    <Link to="/LWG13-shop/" className="goback" >
      <img src={goback} alt="go back" />
     </Link>
-    <Link to="/lwg13-shop.git/cart">
+    <Link to="/LWG13-shop/cart">
      <img src={shopping} alt="cart" />
     </Link>
     </div>
@@ -90,7 +90,7 @@ export default function Detail() {
        </div>
        <div className="userProfile">
          <h2>User Product</h2>
-        <Link to={`/lwg13-shop.git/profile/${data?.data.userId}`} className="userDetail">
+        <Link to={`/LWG13-shop/profile/${data?.data.userId}`} className="userDetail">
          <img src={data?.data.userImage} alt="" />
          <div className="userInfo">
           <p style={{fontSize: "23px"}}>{data?.data.username}</p>
@@ -104,7 +104,7 @@ export default function Detail() {
               {datas && datas.data && Array.isArray(datas.data) ? 
                 datas.data.map((item) => 
                 <Grid item xs={6} sm={3} md={4}>
-                 <Link to={`/lwg13-shop.git/${item._id}`}  className="product-item1" key={item._id}>
+                 <Link to={`/LWG13-shop/${item._id}`}  className="product-item1" key={item._id}>
                   <img src={item.image} alt="product" />
                   <p>{item.title}</p>
                   <span className="price1">${item.price}</span>
@@ -113,7 +113,7 @@ export default function Detail() {
                 </Grid>
               ): <p>loading..</p>}
               </Grid>
-               <Link to="/lwg13-shop.git/category" className="linkMore"><div className="more"><button className="moreButton">Look More</button></div></Link>
+               <Link to="/LWG13-shop/category" className="linkMore"><div className="more"><button className="moreButton">Look More</button></div></Link>
             </div>
         
           <Footer />

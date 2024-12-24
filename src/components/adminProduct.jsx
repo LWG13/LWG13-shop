@@ -13,7 +13,7 @@ export default function
     const { data } = useQuery("yourProduct", () => axios.get(`https://ecommerce-server-y5yv.onrender.com/product/userProduct/${auth._id}`))
     const navigate = useNavigate()
     const createButton = () => {
-      navigate("/lwg13-shop.git/create-product")
+      navigate("/LWG13-shop/create-product")
     }
     
   const handleDelete = (id) => {
@@ -38,7 +38,7 @@ export default function
       console.log(params.row.id)
       return(
         <div className="action-button" >
-          <button className="edit" onClick ={() => navigate(`/lwg13-shop.git/edit-product/${params.row.id}`)}>Edit</button>
+          <button className="edit" onClick ={() => navigate(`/LWG13-shop/edit-product/${params.row.id}`)}>Edit</button>
           <button className="delete" onClick={() => handleDelete(params.row.id)} disabled={auth.createStatus === "PENDING"}>{auth.createStatus === "PENDING" ? <span>Deleting...</span> : <span>Delete</span>}</button>
         </div>
       )
