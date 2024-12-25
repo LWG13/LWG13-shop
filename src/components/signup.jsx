@@ -64,7 +64,7 @@ console.log(user)
         {auth.registerStatus === "reject" ? (
        <span style={{color: "red"}}>{auth.registerError}</span>
       )  : null}
-                           <button className="btn-submit" disabled={auth.registerStatus === "PENDING"}>{auth.registerStatus === "PENDING" ? <span>Sending...</span> : <span>Send</span>} </button>
+                           <button className="btn" disabled={auth.registerStatus === "PENDING"}>{auth.registerStatus === "PENDING" ? <span>Sending...</span> : <span>Send</span>} </button>
                   
           <div className="register-link">
        <p>Already Have Account?<Link to="/login">.  Log In</Link></p>
