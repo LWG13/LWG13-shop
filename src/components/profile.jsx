@@ -24,17 +24,17 @@ export default function Profile() {
    const auth = useSelector(state => state.auth)
   const handleLogout = () => {
     dispatch(logoutUser())
-    navigate("/LWG13-shop/")
+    navigate("/")
   }
   return (
     <div className="profile">
     <div className="grid">
     
   <div className="naviDetail">
-    <Link to="/LWG13-shop/" >
+    <Link to="/" >
      <img src={goback} alt="go back" width="90px" />
     </Link>
-    <Link to="/LWG13-shop/cart">
+    <Link to="/cart">
      <img src={shopping} alt="cart" width="55px" className="shop"/>
     </Link>
      </div>
@@ -50,7 +50,7 @@ export default function Profile() {
   
       <h2 style={{color: "white"}}>{data?.data.username}</h2>
         { data?.data._id === auth._id ? (<div className="buttonBox">
-        <button><Link to="/LWG13-shop/admin">Admin</Link></button>
+        <button><Link to="/admin">Admin</Link></button>
         <button onClick={handleLogout}>Log out</button>
       </div>): null}
         
@@ -59,10 +59,10 @@ export default function Profile() {
       <Grid item xs={12} sm={8} md={8}>
         <div className="profileDetail" >
         <div className="list">
-         <Link to={`/LWG13-shop/profile/${data?.data._id}`} className={page === 1 ? "link active" : "link"} onClick ={() => setPage(1)}>
+         <Link to={`/profile/${data?.data._id}`} className={page === 1 ? "link active" : "link"} onClick ={() => setPage(1)}>
           Profile
          </Link>
-          <Link to={`/LWG13-shop/profile/${data?.data._id}/product`} className={page === 2 ? "link active" : "link"} onClick={() => setPage(2)}>
+          <Link to={`/profile/${data?.data._id}/product`} className={page === 2 ? "link active" : "link"} onClick={() => setPage(2)}>
           Products
          </Link>
         </div>
