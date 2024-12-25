@@ -1,3 +1,5 @@
 {
-  "rewrites" : [{"source": "/LWG-shop/(.*)", "destination": "/index.html"}]
+  "rewrites" : [{ "source": "/LWG-shop/(.*)", "destination": "/index.html" },
+    { "source": "/", "destination": "/index.html" }
+]
 }
