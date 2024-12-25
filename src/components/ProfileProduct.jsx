@@ -28,7 +28,7 @@ export default function ProfileProduct() {
       <Grid container spacing={1} >
         {data?.data.map(product => 
       <Grid xs={6} sm={4} md={4} lg={3} >
-       <Link to={`/LWG13-shop/${product._id}`} className="product-item" key={product.name} >
+       <Link to={`/${product._id}`} className="product-item" key={product.name} >
          <img src={product.image} />
          <p>{product.title}</p>
          <span className="price" >{product.price}$</span>
