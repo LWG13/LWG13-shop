@@ -14,7 +14,7 @@ export default function Admin() {
     <div className="Admin">
       <div className="grid">
         <div className="naviDetail">
-           <Link to={`/LWG13-shop/profile/${auth._id}`} className="goback1">
+           <Link to={`/profile/${auth._id}`} className="goback1">
         <img src={goback} alt="go back" width="90px"/>
         </Link>
         <Setting menu={menu} setMenu={setMenu}/>
@@ -28,8 +28,8 @@ export default function Admin() {
            <div className="sidebar">
              <h1>Admin Panel</h1>
              
-               <li className="sidebar-list"><Link to="/LWG13-shop/admin">Overview</Link></li>
-               <li className="sidebar-list"><Link to="/LWG13-shop/admin/product">Your Product</Link></li>
+               <li className="sidebar-list"><Link to="/admin">Overview</Link></li>
+               <li className="sidebar-list"><Link to="/admin/product">Your Product</Link></li>
 
             
            </div>
@@ -60,11 +60,11 @@ function Setting({menu, setMenu}) {
          <img className="image10" src={cato} alt="menu" width="60px"/>
          </div>
          <div className={`dropdownmenu10 ${ menu ? "active10" : "deactive10" }`}>
-             <Link to="/LWG13-shop/admin" className="dropdownitem10" >
+             <Link to="/admin" className="dropdownitem10" >
                <img src={overview} alt="overview" />
                <p className="link10" >Overview</p>
              </Link>
-           <Link to="/LWG13-shop/admin/product"  className="dropdownitem10" >
+           <Link to="/admin/product"  className="dropdownitem10" >
               <img src={productList} alt="product list" />
                <p  className="link10" >Your Product</p>
              </Link>
