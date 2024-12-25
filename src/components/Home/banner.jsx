@@ -53,7 +53,7 @@ export default function Banner() {
              </h2>
              <p>Save up for your bussiness</p>
              <br/>
-             <button><Link style={{textDecoration: "none", color: "white"}} to="/lwg13-shop/category">Go to Category</Link></button>
+             <button><Link style={{textDecoration: "none", color: "white"}} to="/category">Go to Category</Link></button>
            </div>
           </div>
        </Slider>
