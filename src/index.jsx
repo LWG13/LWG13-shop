@@ -50,103 +50,103 @@ store.dispatch(getTotals())
 store.dispatch(loadUser(null))
 const router = createBrowserRouter([
   {
-    path: "/LWG13-shop/",
+    path: "/",
     element: <Navigation />,
     children: [
       {
-        path: "/LWG13-shop/",
+        path: "/",
         element: <Home />
       },
       {
-        path: "/LWG13-shop/category",
+        path: "/category",
         element: <Category />,
         children: [
           {
-            path: "/LWG13-shop/category/:category",
+            path: "/category/:category",
             element: <CategoryType />
           },
         ]
       },
       {
-        path: "/LWG13-shop/contact",
+        path: "/contact",
         element: <Contact />
       },
       {
-        path: "/LWG13-shop/faq",
+        path: "/faq",
         element: <Faq />
       }
     ]
   },
   {
-     path: "/LWG13-shop/:productId",
+     path: "/:productId",
      element: <Detail />
   },
   {
-    path: "/LWG13-shop/cart",
+    path: "/cart",
     element: <Cart />
   },
   {
-    path: "/LWG13-shop/favourite",
+    path: "/favourite",
     element: <Favourite />
   },
   {
-    path: "/LWG13-shop/login",
+    path: "/login",
     element: <LoginPage />
   },
   {
-    path: "/LWG13-shop/signup",
+    path: "/signup",
     element: <SignupPage />
   },
   {
-    path: "/LWG13-shop/profile/:profileId",
+    path: "/profile/:profileId",
     element: <Profile />,
     children: [
         {
-          path: "/LWG13-shop/profile/:profileId",
+          path: "/profile/:profileId",
           element: <HomeProfile />
         },
       {
-        path: "/LWG13-shop/profile/:profileId/product",
+        path: "/profile/:profileId/product",
         element: <ProfileProduct />
       }
     ]
   },
   {
-    path: "/LWG13-shop/profile/edit/:profileId",
+    path: "/profile/edit/:profileId",
     element: <EditProfile />
   },
   {
-    path: "/LWG13-shop/email",
+    path: "/email",
     element: <EmailPassword />
   },
   {
-    path: "/LWG13-shop/otp",
+    path: "/otp",
     element: <Otp />
   },
   {
-    path: "/LWG13-shop/reset-password",
+    path: "/reset-password",
     element: <ResetPassword />
   },
   {
-    path: "/LWG13-shop/admin",
+    path: "/admin",
     element: <Admin />,
     children: [
       {
-        path: "/LWG13-shop/admin",
+        path: "/admin",
         element: <Overview />
       },
       {
-        path: "/LWG13-shop/admin/product",
+        path: "/admin/product",
         element: <AdminProduct />
       }
     ]
   },
   {
-    path: "/LWG13-shop/create-product",
+    path: "/create-product",
     element: <CreateProduct />
   },
   {
-    path: "/LWG13-shop/edit-product/:productId",
+    path: "/edit-product/:productId",
     element: <EditProduct />
   }
 ]);
