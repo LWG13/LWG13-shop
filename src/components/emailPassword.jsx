@@ -17,13 +17,13 @@ export default function EmailPassword() {
     dispatch(emailAuth(user))
   }
   useEffect(() => {
-    if (auth.firstAuth === true) navigate("/LWG13-shop/otp")
+    if (auth.firstAuth === true) navigate("/otp")
   }, [auth.firstAuth, navigate])
   const { control, register, formState: { errors } } = useForm()
 return(
   <div className="loginPage" >
                   <div className="naviDetail1">
-        <Link to="/LWG13-shop/login" className="goback1">
+        <Link to="/login" className="goback1">
         <img src={goback} alt="go back" />
         </Link>
       </div>
