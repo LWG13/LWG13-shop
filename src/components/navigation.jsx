@@ -31,7 +31,7 @@ Navigation() {
      <div className = "navigation">
       <img src={menu2} onClick={() => setMenu(true)} alt="menu" className="ima" />
        {menu && <Menu menu={menu} setMenu={setMenu} auth= {auth} />}
-      <Link to="/LWG13-shop/"><img src={Logo} alt="amd" className="logoWeb" />
+      <Link to="/"><img src={Logo} alt="amd" className="logoWeb" />
       </Link>
        
       <div className="search">
@@ -39,25 +39,25 @@ Navigation() {
        <img src={search} alt="search" />
       </div>
       <div className="shopping-bag">
-       <Link to="/LWG13-shop/cart">
+       <Link to="/cart">
         <img src={shopping} alt="shop" />
        </Link>
         {cart.cartItem.length === 0 ? null : <span>{cart.cartItem.length}</span>}
       </div>
        <Setting setting={setting} setSetting={setSetting} auth={auth}/>
-       <Link to={auth.userLoaded ? `/LWG13-shop/profile/${auth._id}` : "/LWG13-shop/login"} className="user">
+       <Link to={auth.userLoaded ? `/profile/${auth._id}` : "/login"} className="user">
         <img src={user} alt="user" />
        </Link>
       
      </div>
      <div className="secNavi">
       <ul>
-       <li><Link to="/LWG13-shop/">Home</Link>
+       <li><Link to="/">Home</Link>
        </li>   
-       <li><Link to="/LWG13-shop/category">Category</Link></li>
-      <li><Link to="/LWG13-shop/favourite">Favourite</Link></li>
+       <li><Link to="/category">Category</Link></li>
+      <li><Link to="/favourite">Favourite</Link></li>
       <li>
-       <Link to="/LWG13-shop/contact">Contact</Link>
+       <Link to="/contact">Contact</Link>
       </li>
       </ul>
       </div>
@@ -68,15 +68,15 @@ Navigation() {
       </div>
     </div>
     <div className="navi-mobile">
-      <Link className="item" to="/LWG13-shop/">
+      <Link className="item" to="/">
         <img src={home} alt="home" />
        <span className="linkm" >Home</span>
       </Link>
-       <Link className="item" to="/LWG13-shop/category">
+       <Link className="item" to="/category">
         <img src={cato} alt="category" />
          <span className="linkm">Category</span>
       </Link>
-     <Link className="item" to={auth.userLoaded ? `/LWG13-shop/profile/${auth._id}` : "/LWG13-shop/login"}>
+     <Link className="item" to={auth.userLoaded ? `/profile/${auth._id}` : "/login"}>
       <img src={user} alt="profile" />
       <span className="linkm">Profile</span>
      </Link>
@@ -102,11 +102,11 @@ function Setting({setting, setSetting, auth}) {
          <img className="image1" src={setting2} alt="menu" width="30px"/>
          </div>
          <div className={`dropdownmenu1 ${ setting ? "active1" : "deactive1" }`}>
-             <Link to={auth.userLoaded ? `/LWG13-shop/profile/edit/${auth._id}` : "/LWG13-shop/login"} className="dropdownitem1" >
+             <Link to={auth.userLoaded ? `/profile/edit/${auth._id}` : "/login"} className="dropdownitem1" >
                <img src={setting2} alt="setting" />
-               <p href="#" className="link1" >Account Setting</p>
+               <p className="link1" >Account Setting</p>
              </Link>
-           <Link to="/LWG13-shop/faq"  className="dropdownitem1" >
+           <Link to="/faq"  className="dropdownitem1" >
               <img src={help} alt="help" />
                <p className="link1" >Help and feedback</p>
              </Link>
@@ -124,25 +124,25 @@ function Menu({menu, setMenu, auth}) {
         <hr />
       <div className="menu-item">
         <li >
-          <Link to="/LWG13-shop/favourite"className="dropdownitem">
+          <Link to="/favourite"className="dropdownitem">
             <img src={fav} alt="bookmark" />
             <span>Favourite Cart</span>
           </Link>
         </li>
         <li>
-          <Link to="/LWG13-shop/faq" className="dropdownitem">
+          <Link to="/faq" className="dropdownitem">
              <img src={help} alt="help" />
              <span>Help and Feedback</span>
            </Link>
         </li>
         <li>
-          <Link to={auth.userLoaded ? `/LWG13-shop/profile/edit/${auth._id}` : "/LWG13-shop/login"} className="dropdownitem">
+          <Link to={auth.userLoaded ? `/profile/edit/${auth._id}` : "/login"} className="dropdownitem">
              <img src={setting2} alt="setting" />
              <span> Account Setting</span>
            </Link>
         </li>
         <li>
-          <Link to="/LWG13-shop/contact" className="dropdownitem">
+          <Link to="/contact" className="dropdownitem">
              <img src={contact} alt="setting" />
              <span>Contact</span>
            </Link>
