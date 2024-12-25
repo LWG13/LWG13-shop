@@ -6,7 +6,7 @@ export default function SignupPage() {
       return(
             <div className="signupPage" >
                   <div className="naviDetail1">
-        <Link to="/lwg13-shop/" className="goback1">
+        <Link to="/" className="goback1">
         <img src={goback} alt="go back" />
         </Link>
       </div>
