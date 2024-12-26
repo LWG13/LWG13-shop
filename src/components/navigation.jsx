@@ -63,7 +63,7 @@ export default function Navigation() {
               {cart.cartItem.length === 0 ? null : <span>{cart.cartItem.length}</span>}
             </div>
             <Setting setting={setting} setSetting={setSetting} auth={auth} />
-            <Link to={auth.userLoaded ? `/profile/${auth._id}` : "/login"} className="user" onClick={handleHome}>
+            <Link to={auth.userLoaded ? `/profile/${auth._id}` : "/login"} className="user" >
               <img src={user} alt="user" />
             </Link>
           </div>
@@ -82,15 +82,15 @@ export default function Navigation() {
         </div>
       </div>
       <div className="navi-mobile">
-        <Link className="item" to="/" onClick={handleHome}>
+        <Link className="item" to="/">
           <img src={home} alt="home" />
           <span className="linkm">Home</span>
         </Link>
-        <Link className="item" to="/category" onClick={handleHome}>
+        <Link className="item" to="/category" >
           <img src={cato} alt="category" />
           <span className="linkm">Category</span>
         </Link>
-        <Link className="item" to={auth.userLoaded ? `/profile/${auth._id}` : "/login"} onClick={handleHome}>
+        <Link className="item" to={auth.userLoaded ? `/profile/${auth._id}` : "/login"} >
           <img src={user} alt="profile" />
           <span className="linkm">Profile</span>
         </Link>
@@ -99,7 +99,7 @@ export default function Navigation() {
   );
 }
 
-function Setting({ setting, setSetting, auth, handleHome }) {
+function Setting({ setting, setSetting, auth}) {
   const settingRef = useRef(null);
 
   useEffect(() => {
@@ -118,11 +118,11 @@ function Setting({ setting, setSetting, auth, handleHome }) {
         <img className="image1" src={setting2} alt="menu" width="30px" />
       </div>
       <div className={`dropdownmenu1 ${setting ? "active1" : "deactive1"}`}>
-        <Link to={auth.userLoaded ? `/profile/edit/${auth._id}` : "/login"} className="dropdownitem1" onClick={handleHome}>
+        <Link to={auth.userLoaded ? `/profile/edit/${auth._id}` : "/login"} className="dropdownitem1" >
           <img src={setting2} alt="setting" />
           <p className="link1">Account Setting</p>
         </Link>
-        <Link to="/faq" className="dropdownitem1" onClick={handleHome}>
+        <Link to="/faq" className="dropdownitem1">
           <img src={help} alt="help" />
           <p className="link1">Help and Feedback</p>
         </Link>
@@ -131,7 +131,7 @@ function Setting({ setting, setSetting, auth, handleHome }) {
   );
 }
 
-function Menu({ menu, setMenu, auth, handleHome }) {
+function Menu({ menu, setMenu, auth}) {
   return (
     <div className={menu ? "sidenav active" : "sidenav"}>
       <div className="n">
@@ -141,25 +141,25 @@ function Menu({ menu, setMenu, auth, handleHome }) {
       <hr />
       <div className="menu-item">
         <li>
-          <Link to="/favourite" className="dropdownitem" onClick={handleHome}>
+          <Link to="/favourite" className="dropdownitem">
             <img src={fav} alt="bookmark" />
             <span>Favourite Cart</span>
           </Link>
         </li>
         <li>
-          <Link to="/faq" className="dropdownitem" onClick={handleHome}>
+          <Link to="/faq" className="dropdownitem" >
             <img src={help} alt="help" />
             <span>Help and Feedback</span>
           </Link>
         </li>
         <li>
-          <Link to={auth.userLoaded ? `/profile/edit/${auth._id}` : "/login"} className="dropdownitem" onClick={handleHome}>
+          <Link to={auth.userLoaded ? `/profile/edit/${auth._id}` : "/login"} className="dropdownitem" >
             <img src={setting2} alt="setting" />
             <span>Account Setting</span>
           </Link>
         </li>
         <li>
-          <Link to="/contact" className="dropdownitem" onClick={handleHome}>
+          <Link to="/contact" className="dropdownitem" >
             <img src={contact} alt="setting" />
             <span>Contact</span>
           </Link>
