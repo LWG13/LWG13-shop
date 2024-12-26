@@ -29,7 +29,10 @@ const initialState= {
   createLoading: "",
   createStatus: "",
   deleteProductSuccess: false,
-  editProductSuccess: false
+  editProductSuccess: false,
+  searchResult: [],
+  searchLoading: false,
+  searchSuccess: false
 }
 
 export const registerUser = createAsyncThunk("auth/signup", async (values, {rejectWithValue}) => {
@@ -76,6 +79,17 @@ export const createYourProduct = createAsyncThunk("product/create", async (value
 
      })
     return data.data
+   }catch(err){
+     console.log(err.response.data)
+     return  rejectWithValue(err.response.data)
+   }
+})
+export const searchProduct = createAsyncThunk("product/search", async (values, {rejectWithValue}) => {
+   try{
+      const data = await axios.post("https://ecommerce-server-y5yv.onrender.com/product/search/product", {
+       title: values,
+     })
+     return data.data
    }catch(err){
      console.log(err.response.data)
      return  rejectWithValue(err.response.data)
@@ -265,6 +279,28 @@ const authSlice = createSlice({
     builder.addCase(loginUser.rejected, (state,action) => {
       return {...state, loginStatus: "reject", loginError: action.payload}
     })
+    builder.addCase(searchProduct.pending, (state, action) => {
+      return {
+        ...state,
+        searchLoading: true,
+        searchSuccess: false,
+      }
+    })
+    builder.addCase(searchProduct.fulfilled, (state,action) => {
+      if(action.payload) {
+      
+
+      return {
+        ...state,
+        searchResult: action.payload,
+        searchLoading: false,
+        searchSuccess: true
+      }
+      }else {
+        return state
+      }
+    })
+
     builder.addCase(editProfile.fulfilled, (state,action) => {
       if(action.payload) {
         const user = jwtDecode(action.payload)
