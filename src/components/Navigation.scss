@@ -39,9 +39,9 @@ body{
     $offset: 30px * 0.1;
     top: $offset;
     left: $offset;
-    width: $size - ($offset * 2);
-    height: $size - ($offset * 2);
-    background: $background;
+    width: 30px - ($offset * 2);
+    height: 30px - ($offset * 2);
+    background: white;
   }
 }
 
