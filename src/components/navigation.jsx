@@ -50,7 +50,11 @@ export default function Navigation() {
             </Link>
             <div className="search">
               <input type="text" placeholder="Searching.." onChange={e => setSearch(e.target.value)} />
-              {auth.searchLoading === true ? <div></div> : <img src={search1} alt="search" onClick={handleSearch} />}
+              {auth.searchLoading === true ? (<div class="spinner">
+  <span class="spinner-inner-1"></span>
+  <span class="spinner-inner-2"></span>
+  <span class="spinner-inner-3"></span>
+</div>) : <img src={search1} alt="search" onClick={handleSearch} />}
             </div>
             <div className="shopping-bag">
               <Link to="/cart" onClick={handleHome}>
