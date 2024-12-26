@@ -1,6 +1,7 @@
 import "./search.scss"
 import { Grid } from "@mui/material"
 import { Link } from "react-router-dom"
+import goback from "./goback.png"
 import {useSelector} from "react-redux"
 export default function SearchResult() {
   const auth = useSelector(state => state.auth)
@@ -11,7 +12,7 @@ export default function SearchResult() {
     <div className="searchResult">
      <div className="grid">
       <div className="naviDetail1">
-        <Link to="/" className="goback1">
+        <Link to="/" className="goback1" onClick={handleHome}>
         <img src={goback} alt="go back" />
         </Link>
       </div>
