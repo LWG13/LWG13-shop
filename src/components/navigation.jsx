@@ -44,8 +44,8 @@ export default function Navigation() {
         <div className="navi">
           <div className="navigation">
             <img src={menu2} onClick={() => setMenu(true)} alt="menu" className="ima" />
-            {menu && <Menu menu={menu} setMenu={setMenu} auth={auth} handleHome={handleHome} />}
-            <Link to="/" onClick={() => auth.searchSuccess = false}>
+            {menu && <Menu menu={menu} setMenu={setMenu} auth={auth} />}
+            <Link to="/" >
               <img src={Logo} alt="amd" className="logoWeb" />
             </Link>
             <div className="search">
@@ -57,22 +57,22 @@ export default function Navigation() {
 </div>) : <img src={search1} alt="search" onClick={handleSearch} />}
             </div>
             <div className="shopping-bag">
-              <Link to="/cart" onClick={handleHome}>
+              <Link to="/cart" >
                 <img src={shopping} alt="shop" />
               </Link>
               {cart.cartItem.length === 0 ? null : <span>{cart.cartItem.length}</span>}
             </div>
-            <Setting setting={setting} setSetting={setSetting} auth={auth} handleHome={handleHome} />
+            <Setting setting={setting} setSetting={setSetting} auth={auth} />
             <Link to={auth.userLoaded ? `/profile/${auth._id}` : "/login"} className="user" onClick={handleHome}>
               <img src={user} alt="user" />
             </Link>
           </div>
           <div className="secNavi">
             <ul>
-              <li><Link to="/" onClick={handleHome}>Home</Link></li>
-              <li><Link to="/category" onClick={handleHome}>Category</Link></li>
-              <li><Link to="/favourite" onClick={handleHome}>Favourite</Link></li>
-              <li><Link to="/contact" onClick={handleHome}>Contact</Link></li>
+              <li><Link to="/" >Home</Link></li>
+              <li><Link to="/category" >Category</Link></li>
+              <li><Link to="/favourite">Favourite</Link></li>
+              <li><Link to="/contact" >Contact</Link></li>
             </ul>
           </div>
         </div>
