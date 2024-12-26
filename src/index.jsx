@@ -75,10 +75,6 @@ const router = createBrowserRouter([
       {
         path: "/faq",
         element: <Faq />
-      },
-      {
-	path: "/search",
-	element: <SearchResult />
       }
     ]
   },
@@ -153,6 +149,10 @@ const router = createBrowserRouter([
   {
     path: "/edit-product/:productId",
     element: <EditProduct />
+  },
+  {
+	path: "/search",
+	element: <SearchResult />
   }
 ]);
 
