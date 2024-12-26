@@ -1,7 +1,11 @@
 import "./search.scss"
 import { Grid } from "@mui/material"
+import {useSelector} from "react-redux"
 export default function SearchResult() {
   const auth = useSelector(state => state.auth)
+  const handleHome = () => {
+    auth.searchSuccess = false;
+  };
   return(
     <div className="searchResult">
       <br/>
@@ -15,7 +19,7 @@ export default function SearchResult() {
        <Grid container my={4}> 
          {auth.searchResult.map((item) => 
            <Grid item xs={6} sm={4} md={4} lg={3}>
-            <Link to={`/${item._id}`}  className="product-item2">
+            <Link to={`/${item._id}`}  className="product-item2" onClick={handleHome}>
              <img src={item.image} alt="product" />
              <p>{item.title}</p>
              <span className="price2">${item.price}</span>
