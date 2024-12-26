@@ -38,6 +38,7 @@ import Overview from "./components/adminOverview.jsx"
 import AdminProduct from "./components/adminProduct.jsx"
 import CreateProduct from "./components/createProduct.jsx"
 import EditProduct from "./components/editProduct.jsx"
+import SearchResult from "./components/searchResult.jsx"
 const queryClient = new QueryClient()
 const store = configureStore({
   reducer: {
@@ -74,6 +75,10 @@ const router = createBrowserRouter([
       {
         path: "/faq",
         element: <Faq />
+      },
+      {
+	path: "/search",
+	element: <SearchResult />
       }
     ]
   },
