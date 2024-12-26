@@ -7,8 +7,17 @@ export default function SearchResult() {
   const handleHome = () => {
     auth.searchSuccess = false;
   };
-  return(
+  return( 
     <div className="searchResult">
+     <div className="grid">
+      <div className="naviDetail1">
+        <Link to="/" className="goback1">
+        <img src={goback} alt="go back" />
+        </Link>
+      </div>
+     </div>
+    <div className="gridO">
+      <div className="gridDetail">
       <br/>
       <br/><br/><br/><br/><br/><br/>
       {auth.searchResult.length === 0 ? (
@@ -31,6 +40,8 @@ export default function SearchResult() {
          </Grid>
      </div>   
       )}
+      </div>
+      </div>
     </div>
   )
 }
