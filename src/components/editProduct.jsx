@@ -27,6 +27,7 @@ export default function EditProduct() {
   const { data } = useQuery(["product", productId.productId], () => axios.get(`https://ecommerce-server-y5yv.onrender.com/product/${productId.productId}`))
   const [title, setTitle] = useState(data?.data.title);
   const [image, setImage] = useState(data?.data.image);
+  
   const [description, setDescription] = useState(data?.data.description);
   const [category, setCategory] = useState(data?.data.category);
   const [price, setPrice] = useState(data?.data.price);
