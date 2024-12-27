@@ -16,6 +16,10 @@
   margin-top: 10px;
   border-radius: 5px;
 }
+.adminProduct .box-product .adminProductButton a{
+  text-decoration: none;
+  color: white;
+}
 .action-button{
   padding: 5px;
   z-index: 1000000;
@@ -29,6 +33,10 @@
   outline: none;
   border: none;
   border-radius: 5px;
+}
+.action-button .edit a {
+ text-decoration: none;
+ color: white;
 }
 .action-button .delete{
   width: 90px;
