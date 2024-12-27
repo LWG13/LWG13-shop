@@ -1,4 +1,4 @@
-pimport "./adminProduct.scss"
+import "./adminProduct.scss"
 import { DataGrid } from '@mui/x-data-grid';
 import { useDispatch, useSelector } from "react-redux"
 import { useNavigate, Link } from "react-router-dom"
