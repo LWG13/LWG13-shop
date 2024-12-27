@@ -1,7 +1,7 @@
 import "./adminProduct.scss"
 import { DataGrid } from '@mui/x-data-grid';
 import { useDispatch, useSelector } from "react-redux"
-import { useNavigate } from "react-router-dom"
+import { useNavigate, Link } from "react-router-dom"
 import { useState } from "react"
 import { deleteProduct } from "./ReduxToolkit/authSlice"
 import axios from "axios"
@@ -12,10 +12,13 @@ export default function
     const auth = useSelector(state => state.auth)
     const { data } = useQuery("yourProduct", () => axios.get(`https://ecommerce-server-y5yv.onrender.com/product/userProduct/${auth._id}`))
     const navigate = useNavigate()
-    const createButton = () => {
-      navigate("/create-product")
+    const createButton = async () => {
+      await auth.createProductSuccess = false
+     
     }
-    
+  const handleEdit = () => {
+   auth.editProductSuccess = false
+  }
   const handleDelete = (id) => {
     dispatch(deleteProduct(id))
   }
@@ -38,7 +41,7 @@ export default function
       console.log(params.row.id)
       return(
         <div className="action-button" >
-          <button className="edit" onClick ={() => navigate(`/edit-product/${params.row.id}`)}>Edit</button>
+          <button className="edit" onClick ={handleEdit}><Link to={`/edit-product/${params.row.id}`}Edit</button>
           <button className="delete" onClick={() => handleDelete(params.row.id)} disabled={auth.createStatus === "PENDING"}>{auth.createStatus === "PENDING" ? <span>Deleting...</span> : <span>Delete</span>}</button>
         </div>
       )
@@ -58,7 +61,7 @@ export default function
     <div className="adminProduct" >
       <div className="box-product" >
        <h2>Your Product</h2>
-       <button className="adminProductButton" onClick={() => createButton()}>Create</button>
+       <button className="adminProductButton" onClick={() => createButton()}><Link to="/create-product">Create</Link></button>
       </div>
       <br/><br/>
      <DataGrid
