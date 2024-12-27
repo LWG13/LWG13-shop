@@ -36,6 +36,7 @@ export default function ProfileProduct() {
         </Link>
       </Grid>
     )}
+        <br/><br/>
         <button className={page === 0 ? "pagButton none" : "pagButton"} onClick={() => setPage(page - 1)} >{page === 0 ? 0 : page - 1}</button>
         <button className="pagButton now">{page}</button>
          <button onClick={() => setPage(page + 1)} className={data?.data.length !== 20 ? "pagButton none" : "pagButton"}>{page + 1}</button>
