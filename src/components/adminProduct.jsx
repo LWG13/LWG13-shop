@@ -1,4 +1,4 @@
-import "./adminProduct.scss"
+pimport "./adminProduct.scss"
 import { DataGrid } from '@mui/x-data-grid';
 import { useDispatch, useSelector } from "react-redux"
 import { useNavigate, Link } from "react-router-dom"
@@ -12,8 +12,8 @@ export default function
     const auth = useSelector(state => state.auth)
     const { data } = useQuery("yourProduct", () => axios.get(`https://ecommerce-server-y5yv.onrender.com/product/userProduct/${auth._id}`))
     const navigate = useNavigate()
-    const createButton = async () => {
-      await auth.createProductSuccess = false
+    const createButton = () => {
+       auth.createProductSuccess = false
      
     }
   const handleEdit = () => {
