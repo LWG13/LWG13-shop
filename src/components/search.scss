@@ -6,19 +6,20 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
+ 
 }
 .gridO {
   display: flex;
   justify-content: center;
   margin-top: 80px;
-  width: 100%;
+
 }
 .searchResult .grid1{
   display: flex;
   justify-content: center;
   background: #BF77F6;
-  width: 100%;
+  right: 0;
+  left: 0;
   height: 100px;
   position: fixed;
   top: 0;
