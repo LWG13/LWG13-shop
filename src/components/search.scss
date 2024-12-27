@@ -8,6 +8,12 @@
   justify-content: center;
   width: 100%;
 }
+.gridO {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  width: 100%,
+}
 .grid1{
   display: flex;
   justify-content: center;
@@ -18,7 +24,17 @@
   top: 0;
   
 }
-
+ .grid1 .naviDetail1{
+  display: flex;
+  background-color: #BF77F6;
+  justify-content: space-between;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 10px;
+  height: 80px;
+}
  .naviDetail1 .goback1 img {
   width: 80px;
 }
