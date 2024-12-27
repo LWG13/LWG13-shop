@@ -13,7 +13,7 @@ export default function SearchResult() {
      <div className="grid1">
       <div className="naviDetail1">
         <Link to="/" className="goback1" onClick={handleHome}>
-        <img src={goback} alt="go back"  />
+        <img src={goback} alt="go backk"  />
         </Link>
       </div>
      </div>
