@@ -16,9 +16,6 @@ export default function
        auth.createProductSuccess = false
      
     }
-  const handleEdit = () => {
-   auth.editProductSuccess = false
-  }
   const handleDelete = (id) => {
     dispatch(deleteProduct(id))
   }
