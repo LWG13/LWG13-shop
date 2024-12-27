@@ -10,9 +10,9 @@ export default function SearchResult() {
   };
   return( 
     <div className="searchResult">
-     <div className="grid">
-      <div className="naviDetail">
-        <Link to="/" className="goback" onClick={handleHome}>
+     <div className="grid1">
+      <div className="naviDetail1">
+        <Link to="/" className="goback1" onClick={handleHome}>
         <img src={goback} alt="go back"  />
         </Link>
       </div>
