@@ -75,7 +75,7 @@ export default function EditProduct() {
           { data?.data._id === productId.productId ?  (
           <div className="productBox">
             <div className="productInfo">
-              <h1>Create your Product</h1>
+              <h1>Edit your Product</h1>
               <Grid container>
                 <Grid item xs={12} sm={5} md={5} lg={5}>
                   <div className="productImg">
