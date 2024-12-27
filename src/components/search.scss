@@ -2,7 +2,7 @@
   padding: none;
   
 }
-.gridDetail{
+.searchResult .gridDetail{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,7 +14,7 @@
   margin-top: 80px;
   width: 100%;
 }
-.grid1{
+.searchResult .grid1{
   display: flex;
   justify-content: center;
   background: #BF77F6;
@@ -23,7 +23,7 @@
   position: fixed;
   top: 0;
 }
- .grid1 .naviDetail1{
+ .searchResult .grid1 .naviDetail1{
   display: flex;
   background-color: #BF77F6;
   justify-content: space-between;
@@ -33,7 +33,7 @@
   top: 0;
   height: 80px;
 }
- .naviDetail1 .goback1 img {
+ .searchResult .naviDetail1 .goback1 img {
   width: 80px;
 
 }
