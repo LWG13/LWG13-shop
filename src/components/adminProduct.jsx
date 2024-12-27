@@ -38,7 +38,7 @@ export default function
       console.log(params.row.id)
       return(
         <div className="action-button" >
-          <button className="edit" ><Link to={`/edit-product/${params.row.id}`} onClick ={handleEdit}>Edit</Link></button>
+          <button className="edit" ><Link to={`/edit-product/${params.row.id}`}>Edit</Link></button>
           <button className="delete" onClick={() => handleDelete(params.row.id)} disabled={auth.createStatus === "PENDING"}>{auth.createStatus === "PENDING" ? <span>Deleting...</span> : <span>Delete</span>}</button>
         </div>
       )
