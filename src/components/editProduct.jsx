@@ -64,7 +64,7 @@ export default function EditProduct() {
      <div className="createProduct">
       <div className="grid">
         <div className="naviDetail">
-          <Link to={`/admin`}>
+          <Link to={`/admin/product`}>
             <img src={goback} alt="go back" width="90px" />
           </Link>
         </div>
