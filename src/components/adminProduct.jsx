@@ -19,6 +19,14 @@ export default function
   const handleDelete = (id) => {
     dispatch(deleteProduct(id))
   }
+    const rows = data?.data && data?.data.map(item => {
+      return {
+        id: item._id,
+        title: item.title,
+        image: item.image,
+        price: item.price,
+      }
+    })
     const columns = [
   { field: 'id', headerName: 'ID', width: 100 },
   { field: "image", headerName: 'image', width: 130, renderCell: (params) => {return(
@@ -45,14 +53,7 @@ export default function
     }
   }
 ];
-    const rows = data?.data && data?.data.map(item => {
-      return {
-        id: item._id,
-        title: item.title,
-        image: item.image,
-        price: item.price,
-      }
-    })
+    
     const paginationModel = { page: 0, pageSize: 15 };
   return(
     <div className="adminProduct" >
