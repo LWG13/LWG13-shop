@@ -104,7 +104,7 @@ export default function Cart() {
             <Grid container my={4}>
               {datas && datas.data && Array.isArray(datas.data) ? 
                 datas.data.map((item) => 
-                <Grid item xs={6} sm={3} md={4}>
+                <Grid item xs={6} sm={4} md={4}>
                  <Link to={`/${item._id}`}  className="product-item2">
                   <img src={item.image} alt="product" />
                   <p>{item.title}</p>
