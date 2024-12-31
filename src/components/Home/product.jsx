@@ -13,7 +13,7 @@ export default function Product() {
     <Grid container my={4}>
       {data && data.data && Array.isArray(data.data) ? 
         data.data.map((item) => 
-        <Grid item xs={6} sm={3} md={4}>
+        <Grid item xs={6} sm={4} md={4}>
          <Link to={`/${item._id}`}  className="product-item2" key={item._id}>
           <img src={item.image} alt="product" />
           <p>{item.title}</p>
