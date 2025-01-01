@@ -106,7 +106,7 @@ export default function Cart() {
                 datas.data.map((item) => 
                 <Grid item xs={6} sm={4} md={4}>
                  <Link to={`/${item._id}`}  className="product-item2">
-                  <img src={item.image} alt="product" />
+                  <img src={item.image} alt="product" loading="lazy" />
                   <p>{item.title}</p>
                   <span className="price2">${item.price}</span>
                   <div className="product-category"><span>{item.category}</span></div>
