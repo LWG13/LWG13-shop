@@ -93,7 +93,7 @@ export default function Category() {
                 datas?.data.map((item) => 
                 <Grid item xs={6} sm={3} md={4}>
                  <Link to={`/${item._id}`}  className="category-item">
-                  <img src={item.image} alt="product" />
+                  <img src={item.image} alt="product" loading="lazy" />
                   <p>{item.title}</p>
                   <span className="price3">${item.price}</span>
                 
