@@ -105,7 +105,7 @@ export default function Detail() {
                 datas.data.map((item) => 
                 <Grid item xs={6} sm={4} md={4}>
                  <Link to={`/${item._id}`}  className="product-item1" key={item._id}>
-                  <img src={item.image} alt="product" />
+                  <img src={item.image} alt="product" loading="lazy"/>
                   <p>{item.title}</p>
                   <span className="price1">${item.price}</span>
             
