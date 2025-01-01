@@ -24,7 +24,7 @@ export default function CategoryType() {
               categoryData.data.map((categoryItem) => (
         <Grid item xs={6} sm={4} md={4} lg={3}>
                 <Link key={categoryItem._id} to={`/${categoryItem._id}`} className="category-item">
-                  <img src={categoryItem?.image} alt="product" />
+                  <img src={categoryItem?.image} alt="product" loading="lazy" />
                   <p>{categoryItem?.title}</p>
                   <span className="price3">${categoryItem?.price}</span>
                 
