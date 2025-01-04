@@ -57,7 +57,7 @@ export default function Cart() {
              
              <div className="cart-item" key={cart.title}>
               
-              <div className="cart-product">
+              <Link to=`/${cart._id}` className="cart-product">
                 <img src={cart.image} alt="product" />
                 <div style={{paddingLeft: 10}}>
                   <h2 className="name">{cart.title}</h2>
@@ -75,7 +75,7 @@ export default function Cart() {
                 </div>
            <button className="buttonremove" onClick={() => removeProduct(cart)}>Remove</button>   
                 
-         </div>
+         </Link>
             
              </div>
               ))}
