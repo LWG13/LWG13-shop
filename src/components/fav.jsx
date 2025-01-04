@@ -39,7 +39,7 @@ export default function Favourite() {
              
              <div className="cart-item" key={fav._id}>
               
-              <Link to=`/${fav._id}` className="cart-product">
+              <Link to={`/${fav._id}`} className="cart-product">
                 <img src={fav.image} alt="product" />
                 <div style={{paddingLeft: 10}}>
                   <h2 className="name">{fav.title}</h2>
