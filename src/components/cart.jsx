@@ -65,7 +65,7 @@ export default function Cart() {
                     ${cart.price * cart.cartQuantity}
                   </p>
                 </div>
-              </div>
+              </Link>
               <div className="cart-pad">
                 
                 <div className="count">
@@ -75,7 +75,7 @@ export default function Cart() {
                 </div>
            <button className="buttonremove" onClick={() => removeProduct(cart)}>Remove</button>   
                 
-         </Link>
+         </div>
             
              </div>
               ))}
