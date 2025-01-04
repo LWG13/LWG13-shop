@@ -39,7 +39,7 @@ export default function Favourite() {
              
              <div className="cart-item" key={fav._id}>
               
-              <div className="cart-product">
+              <Link to=`/${fav._id}` className="cart-product">
                 <img src={fav.image} alt="product" />
                 <div style={{paddingLeft: 10}}>
                   <h2 className="name">{fav.title}</h2>
@@ -50,7 +50,7 @@ export default function Favourite() {
                 
            <img src ={heart}  alt ="heart" className="heart" onClick={() => dispatch(removeFromFav(fav))} width="30px"/>  
                 
-         </div>
+         </Link>
             
              </div>
               ))}
