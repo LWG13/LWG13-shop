@@ -45,12 +45,12 @@ export default function Favourite() {
                   <h2 className="name">{fav.title}</h2>
                   <p>${fav.price}</p>
                 </div>
-              </div>
+              </Link>
               <div className="cart-pad">
                 
            <img src ={heart}  alt ="heart" className="heart" onClick={() => dispatch(removeFromFav(fav))} width="30px"/>  
                 
-         </Link>
+         </div>
             
              </div>
               ))}
