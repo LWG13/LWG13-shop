@@ -1,7 +1,7 @@
 
 import React from 'react'
 import ReactDOM from 'react-dom/client'
- 
+  
 import Home from './components/Home/home.jsx'
 import SignupPage from "./components/signupPage.jsx"
 import { ToastContainer } from "react-toastify"
